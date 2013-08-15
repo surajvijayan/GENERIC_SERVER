@@ -1,0 +1,300 @@
+\hypertarget{classgeneric__server}{\section{generic\-\_\-server Class Reference}
+\label{classgeneric__server}\index{generic\-\_\-server@{generic\-\_\-server}}
+}
+
+
+This is a singleton class and provides framework functionality.  
+
+
+
+
+{\ttfamily \#include $<$generic\-\_\-server.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classgeneric__server_a62e814e9e573919dc2b94012caf835ad}{init} ()
+\item 
+\hypertarget{classgeneric__server_a860eaf6bbbf4796368a3c88df1a96b66}{int \hyperlink{classgeneric__server_a860eaf6bbbf4796368a3c88df1a96b66}{log} (unsigned int, unsigned int, char $\ast$)}\label{classgeneric__server_a860eaf6bbbf4796368a3c88df1a96b66}
+
+\begin{DoxyCompactList}\small\item\em enables logging to framework managed log file. \end{DoxyCompactList}\item 
+\hypertarget{classgeneric__server_a2c1ab2e6b558d2450b30c4fa27580f85}{int \hyperlink{classgeneric__server_a2c1ab2e6b558d2450b30c4fa27580f85}{log} (unsigned int, unsigned int, string)}\label{classgeneric__server_a2c1ab2e6b558d2450b30c4fa27580f85}
+
+\begin{DoxyCompactList}\small\item\em enables logging to framework managed log file. \end{DoxyCompactList}\item 
+\hypertarget{classgeneric__server_a54933f331e66e8678ed959725ae79681}{int {\bfseries get\-\_\-log\-\_\-size} (void)}\label{classgeneric__server_a54933f331e66e8678ed959725ae79681}
+
+\item 
+\hypertarget{classgeneric__server_a33c4919dde937ec28bf4a5d10db1da18}{int \hyperlink{classgeneric__server_a33c4919dde937ec28bf4a5d10db1da18}{rollover\-\_\-logs} (void)}\label{classgeneric__server_a33c4919dde937ec28bf4a5d10db1da18}
+
+\begin{DoxyCompactList}\small\item\em Rolls over log files, configured in Master configuation file. \end{DoxyCompactList}\item 
+\hypertarget{classgeneric__server_a3e154dfbe279b826e32105b789f70d23}{int {\bfseries close\-\_\-log} (void)}\label{classgeneric__server_a3e154dfbe279b826e32105b789f70d23}
+
+\item 
+\hypertarget{classgeneric__server_a863674d44025a2039da2ca2efa5cfc38}{int \hyperlink{classgeneric__server_a863674d44025a2039da2ca2efa5cfc38}{sock\-\_\-init} (void)}\label{classgeneric__server_a863674d44025a2039da2ca2efa5cfc38}
+
+\begin{DoxyCompactList}\small\item\em Really useful only for Windows, just invokes W\-S\-A\-Startup A\-P\-I. \end{DoxyCompactList}\item 
+\hypertarget{classgeneric__server_a03f89c94d97b41b7eafc12262e740eb0}{int \hyperlink{classgeneric__server_a03f89c94d97b41b7eafc12262e740eb0}{swap\-\_\-bytes} (unsigned char $\ast$key)}\label{classgeneric__server_a03f89c94d97b41b7eafc12262e740eb0}
+
+\begin{DoxyCompactList}\small\item\em A simple utility to swap upper / lower 8 bytes of a 16 bytes buffer. \end{DoxyCompactList}\item 
+int \hyperlink{classgeneric__server_ae3654bb1871f8ac406824ba39b8c6d6e}{bb\-\_\-getline} (char $\ast$sav\-\_\-buffer, size\-\_\-t length, size\-\_\-t conn\-\_\-s)
+\item 
+\hypertarget{classgeneric__server_af31fe6b46ca69c627ba8e70ea2e52d9b}{int {\bfseries bb\-\_\-getline} (char $\ast$sav\-\_\-buffer, size\-\_\-t length, size\-\_\-t conn\-\_\-s, int)}\label{classgeneric__server_af31fe6b46ca69c627ba8e70ea2e52d9b}
+
+\item 
+\hypertarget{classgeneric__server_a211d0231b92304991390ea50b369289b}{int {\bfseries get\-\_\-status} (unsigned char $\ast$buff)}\label{classgeneric__server_a211d0231b92304991390ea50b369289b}
+
+\item 
+\hypertarget{classgeneric__server_ad6f0da2aa51af9236238159fb1444927}{string {\bfseries get\-\_\-cur\-\_\-time} (void)}\label{classgeneric__server_ad6f0da2aa51af9236238159fb1444927}
+
+\item 
+\hypertarget{classgeneric__server_ad9d2719d90f7529ffc2119bc8c6b548a}{string {\bfseries trim} (const std\-::string \&)}\label{classgeneric__server_ad9d2719d90f7529ffc2119bc8c6b548a}
+
+\item 
+\hypertarget{classgeneric__server_a1b319051165a40cfb76f89b780baa8d3}{int {\bfseries socket\-\_\-close} (S\-O\-C\-K\-E\-T)}\label{classgeneric__server_a1b319051165a40cfb76f89b780baa8d3}
+
+\item 
+\hypertarget{classgeneric__server_a88d6d9822018cba295f20d5414097f78}{int {\bfseries close\-\_\-thread\-\_\-ids} (void)}\label{classgeneric__server_a88d6d9822018cba295f20d5414097f78}
+
+\item 
+S\-O\-C\-K\-E\-T \hyperlink{classgeneric__server_a518621352c2fb76078cf56e41ca89606}{create\-\_\-socket} (int)
+\item 
+\hypertarget{classgeneric__server_a7ab863e0a9bbf8df13dfd7830b05f5ac}{bool {\bfseries get\-\_\-verify\-\_\-client} (void)}\label{classgeneric__server_a7ab863e0a9bbf8df13dfd7830b05f5ac}
+
+\item 
+\hypertarget{classgeneric__server_a14cb747bc30528c074113df8d2de90f0}{int {\bfseries set\-\_\-verify\-\_\-client} (bool)}\label{classgeneric__server_a14cb747bc30528c074113df8d2de90f0}
+
+\item 
+\hypertarget{classgeneric__server_aae24a7c5d70e28279ffbc22c5b038ca9}{int {\bfseries check\-\_\-enabled\-\_\-plugin} (string)}\label{classgeneric__server_aae24a7c5d70e28279ffbc22c5b038ca9}
+
+\item 
+\hypertarget{classgeneric__server_af498d05773d935dac207a224d4b09e25}{int {\bfseries check\-\_\-allocated\-\_\-port} (string in\-\_\-plugin\-\_\-id, string in\-\_\-plugin\-\_\-port)}\label{classgeneric__server_af498d05773d935dac207a224d4b09e25}
+
+\item 
+\hypertarget{classgeneric__server_a065818f8378c93da1fd5e65d96568283}{int {\bfseries set\-\_\-conf\-\_\-file} (char $\ast$cfile)}\label{classgeneric__server_a065818f8378c93da1fd5e65d96568283}
+
+\item 
+\hypertarget{classgeneric__server_a015bcfe7cea8059c614d9893a0b08b17}{int {\bfseries set\-\_\-process\-\_\-name} (char $\ast$cfile)}\label{classgeneric__server_a015bcfe7cea8059c614d9893a0b08b17}
+
+\item 
+\hypertarget{classgeneric__server_af0e2bacfbff7810aef296fd19e4f180b}{int {\bfseries reload\-\_\-conf\-\_\-file} (void)}\label{classgeneric__server_af0e2bacfbff7810aef296fd19e4f180b}
+
+\item 
+\hypertarget{classgeneric__server_acfccaf0c7a1e0bea1d005d34fab283ed}{int {\bfseries get\-\_\-command\-\_\-port} (void)}\label{classgeneric__server_acfccaf0c7a1e0bea1d005d34fab283ed}
+
+\item 
+\hypertarget{classgeneric__server_a67de9c7251b5cd29f4b3e411455df973}{int {\bfseries plugin\-\_\-read\-\_\-conf\-\_\-file} (G\-E\-N\-E\-R\-I\-C\-\_\-\-P\-L\-U\-G\-I\-N $\ast$, int thread\-\_\-no)}\label{classgeneric__server_a67de9c7251b5cd29f4b3e411455df973}
+
+\item 
+\hypertarget{classgeneric__server_ac1732bb9db8bdc382c8268e209c9841c}{int {\bfseries syslog\-\_\-msg} (unsigned int debug\-\_\-level, unsigned int verbose\-\_\-level, string data)}\label{classgeneric__server_ac1732bb9db8bdc382c8268e209c9841c}
+
+\item 
+\hypertarget{classgeneric__server_aaa0eaebac64692bb4ad085f9a870cd41}{string {\bfseries get\-\_\-framework\-\_\-version} (void)}\label{classgeneric__server_aaa0eaebac64692bb4ad085f9a870cd41}
+
+\item 
+\hypertarget{classgeneric__server_a1475cf57af52277df14d035ec6116cc4}{int {\bfseries print\-\_\-key\-\_\-message} ()}\label{classgeneric__server_a1475cf57af52277df14d035ec6116cc4}
+
+\item 
+\hypertarget{classgeneric__server_aa4706f1173f057b11c33c249465632d0}{int {\bfseries get\-\_\-thread\-\_\-id} ()}\label{classgeneric__server_aa4706f1173f057b11c33c249465632d0}
+
+\item 
+\hypertarget{classgeneric__server_a3a06c104224dcd1b6c950e08d357e9e0}{int {\bfseries rel\-\_\-thread\-\_\-id} (int)}\label{classgeneric__server_a3a06c104224dcd1b6c950e08d357e9e0}
+
+\item 
+bool \hyperlink{classgeneric__server_a4f1cd298834c12d725808673a1b89f5b}{check\-\_\-plugin\-\_\-aliases} (vector$<$ string $>$ \&alias)
+\item 
+\hypertarget{classgeneric__server_ae4c64f85fe50f42c829e97c6f08a8923}{int {\bfseries set\-\_\-plugins\-\_\-path} (vector$<$ string $>$ \&plugin\-\_\-parms)}\label{classgeneric__server_ae4c64f85fe50f42c829e97c6f08a8923}
+
+\item 
+\hypertarget{classgeneric__server_ac0bd385f3afb4efcca7f7af58f3701d8}{string {\bfseries get\-\_\-plugins\-\_\-path} ()}\label{classgeneric__server_ac0bd385f3afb4efcca7f7af58f3701d8}
+
+\item 
+\hypertarget{classgeneric__server_af46c85ae0a66c174e5848b007aab7747}{int {\bfseries setnonblocking} (S\-O\-C\-K\-E\-T)}\label{classgeneric__server_af46c85ae0a66c174e5848b007aab7747}
+
+\item 
+\hypertarget{classgeneric__server_a0656a870b6af646fa123c1d10033364f}{int {\bfseries setblocking} (S\-O\-C\-K\-E\-T)}\label{classgeneric__server_a0656a870b6af646fa123c1d10033364f}
+
+\item 
+\hypertarget{classgeneric__server_a3f01d821d7032b872f38b0490f1db0a0}{int {\bfseries get\-\_\-thread\-\_\-sync\-\_\-mutex} (void)}\label{classgeneric__server_a3f01d821d7032b872f38b0490f1db0a0}
+
+\item 
+\hypertarget{classgeneric__server_ab35fc0a3a707d6aa4c9b283077e93841}{int {\bfseries rel\-\_\-thread\-\_\-sync\-\_\-mutex} (void)}\label{classgeneric__server_ab35fc0a3a707d6aa4c9b283077e93841}
+
+\item 
+\hypertarget{classgeneric__server_a8965fce22c7adf4463d97a2e795cb8f1}{int {\bfseries ssl\-\_\-async\-\_\-write} (S\-S\-L $\ast$ssl, char $\ast$buf, int size)}\label{classgeneric__server_a8965fce22c7adf4463d97a2e795cb8f1}
+
+\item 
+\hypertarget{classgeneric__server_a8024f37d4850f8377ffda6e4feab58f9}{int {\bfseries ssl\-\_\-async\-\_\-read} (S\-S\-L $\ast$ssl, char $\ast$buf, int size)}\label{classgeneric__server_a8024f37d4850f8377ffda6e4feab58f9}
+
+\item 
+\hypertarget{classgeneric__server_a8bff8579270ef1ef208c72a9740cdceb}{int {\bfseries ssl\-\_\-async\-\_\-accept} (S\-S\-L $\ast$ssl)}\label{classgeneric__server_a8bff8579270ef1ef208c72a9740cdceb}
+
+\item 
+\hypertarget{classgeneric__server_a7235399526ad0719d80c3ecc6da52cc8}{vector$<$ string $>$ {\bfseries split} (const string \&s, const string \&delim, const bool keep\-\_\-empty)}\label{classgeneric__server_a7235399526ad0719d80c3ecc6da52cc8}
+
+\item 
+G\-E\-N\-E\-R\-I\-C\-\_\-\-P\-L\-U\-G\-I\-N $\ast$ \hyperlink{classgeneric__server_a243ee0c97048a292a8fda0ab3d5217e0}{load\-\_\-shared\-\_\-lib} (string library\-\_\-image, string)
+\item 
+\hypertarget{classgeneric__server_aa943a01de47df0131024fd2ee615f4b0}{int {\bfseries unload\-\_\-shared\-\_\-lib} (string plugin\-\_\-type)}\label{classgeneric__server_aa943a01de47df0131024fd2ee615f4b0}
+
+\item 
+\hypertarget{classgeneric__server_a8825ed14d5512251ffb83bb61679f183}{vector$<$ G\-E\-N\-E\-R\-I\-C\-\_\-\-P\-L\-U\-G\-I\-N $\ast$ $>$\\*
+\-::iterator {\bfseries get\-\_\-start\-\_\-iterator} (void)}\label{classgeneric__server_a8825ed14d5512251ffb83bb61679f183}
+
+\item 
+\hypertarget{classgeneric__server_ab50a9a74edc5b55f061f54c19ea45d27}{vector$<$ G\-E\-N\-E\-R\-I\-C\-\_\-\-P\-L\-U\-G\-I\-N $\ast$ $>$\\*
+\-::iterator {\bfseries get\-\_\-end\-\_\-iterator} (void)}\label{classgeneric__server_ab50a9a74edc5b55f061f54c19ea45d27}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneric__server_a59e909661d61abe10a7392a7112641d1}{static \hyperlink{classgeneric__server}{generic\-\_\-server} $\ast$ \hyperlink{classgeneric__server_a59e909661d61abe10a7392a7112641d1}{instance} (void)}\label{classgeneric__server_a59e909661d61abe10a7392a7112641d1}
+
+\begin{DoxyCompactList}\small\item\em Instantiate tis singleton class only once and return pointer to instantiated object later on.. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneric__server_a174dc14e1ad533eb80914d6502704c62}{vector$<$ G\-E\-N\-E\-R\-I\-C\-\_\-\-P\-L\-U\-G\-I\-N $\ast$ $>$\\*
+\-::iterator {\bfseries itr}}\label{classgeneric__server_a174dc14e1ad533eb80914d6502704c62}
+
+\item 
+\hypertarget{classgeneric__server_a3ec385161a1a70bbeabb9c4f9dacaff9}{vector$<$ G\-E\-N\-E\-R\-I\-C\-\_\-\-P\-L\-U\-G\-I\-N $\ast$ $>$ \hyperlink{classgeneric__server_a3ec385161a1a70bbeabb9c4f9dacaff9}{v}}\label{classgeneric__server_a3ec385161a1a70bbeabb9c4f9dacaff9}
+
+\begin{DoxyCompactList}\small\item\em Vector to hold all plug-\/ins. \end{DoxyCompactList}\item 
+\hypertarget{classgeneric__server_ab9740042b53c672751f499b529833ae9}{unsigned int {\bfseries timeout\-\_\-seconds}}\label{classgeneric__server_ab9740042b53c672751f499b529833ae9}
+
+\item 
+\hypertarget{classgeneric__server_a9eb1da69a8295c19cdd78829f91e358f}{int {\bfseries max\-\_\-threads}}\label{classgeneric__server_a9eb1da69a8295c19cdd78829f91e358f}
+
+\item 
+\hypertarget{classgeneric__server_a49946117ec3df868203ff96af1d4ff95}{int {\bfseries command\-\_\-port}}\label{classgeneric__server_a49946117ec3df868203ff96af1d4ff95}
+
+\item 
+\hypertarget{classgeneric__server_ad2e902a2f68183250ccf979a80ede5b9}{ofstream {\bfseries log\-\_\-file}}\label{classgeneric__server_ad2e902a2f68183250ccf979a80ede5b9}
+
+\item 
+\hypertarget{classgeneric__server_aedf901cbd053eb90c43800b31102b331}{string {\bfseries logname}}\label{classgeneric__server_aedf901cbd053eb90c43800b31102b331}
+
+\item 
+\hypertarget{classgeneric__server_a240d5f05f73b4fbc5df8706b015820e1}{map$<$ string, void $\ast$ $>$ {\bfseries dll\-\_\-handles}}\label{classgeneric__server_a240d5f05f73b4fbc5df8706b015820e1}
+
+\item 
+\hypertarget{classgeneric__server_ac8fa269bdb179f753e8acb5f531de682}{map$<$ int, \hyperlink{generic__server_8h_a877c4c2e2b2e21aa81ed78993c4fc85d}{T\-H\-R\-E\-A\-D\-\_\-\-I\-N\-F\-O} $>$ \hyperlink{classgeneric__server_ac8fa269bdb179f753e8acb5f531de682}{thread\-\_\-ids}}\label{classgeneric__server_ac8fa269bdb179f753e8acb5f531de682}
+
+\begin{DoxyCompactList}\small\item\em Map to store all currently running threads. \end{DoxyCompactList}\item 
+\hypertarget{classgeneric__server_a9e038bde8956ed084a800c51aaaae62a}{map$<$ string, \hyperlink{generic__server_8h_a9aee3b373ab8283d16a7b8303fc27904}{create\-\_\-fp} $>$ \hyperlink{classgeneric__server_a9e038bde8956ed084a800c51aaaae62a}{factory}}\label{classgeneric__server_a9e038bde8956ed084a800c51aaaae62a}
+
+\begin{DoxyCompactList}\small\item\em Map that has function pointers to 'create\-\_\-instance()' factory method for all plug-\/in libraries. \end{DoxyCompactList}\item 
+\hypertarget{classgeneric__server_aa4b754bc2ef0cfbdba97df45c5b14ea6}{\hyperlink{classSSLServer}{S\-S\-L\-Server} {\bfseries sslserver}}\label{classgeneric__server_aa4b754bc2ef0cfbdba97df45c5b14ea6}
+
+\item 
+\hypertarget{classgeneric__server_a150c2988e43e1f08c6f02bf18556d1ca}{bool {\bfseries syslog\-\_\-flag}}\label{classgeneric__server_a150c2988e43e1f08c6f02bf18556d1ca}
+
+\item 
+\hypertarget{classgeneric__server_a3676e2b85ddbdaa47c4f7c30565f67d3}{map$<$ string, bool $>$ {\bfseries bootstrap\-\_\-jobs}}\label{classgeneric__server_a3676e2b85ddbdaa47c4f7c30565f67d3}
+
+\item 
+\hypertarget{classgeneric__server_a4637878babe3e9c859305da7f27edc4d}{string \hyperlink{classgeneric__server_a4637878babe3e9c859305da7f27edc4d}{server\-\_\-cert}}\label{classgeneric__server_a4637878babe3e9c859305da7f27edc4d}
+
+\begin{DoxyCompactList}\small\item\em T\-L\-S certificate stuff. \end{DoxyCompactList}\item 
+\hypertarget{classgeneric__server_a0948de8874a61c2ddb0b4dd61a183620}{string {\bfseries rsa\-\_\-private\-\_\-key}}\label{classgeneric__server_a0948de8874a61c2ddb0b4dd61a183620}
+
+\item 
+\hypertarget{classgeneric__server_a30a83dd82d204fe8434aaf74a1e6653f}{string {\bfseries ca\-\_\-certificate}}\label{classgeneric__server_a30a83dd82d204fe8434aaf74a1e6653f}
+
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classgeneric__server_ac05c40bbf07c632b91e100a0e5528a84}{static \hyperlink{classgeneric__server}{generic\-\_\-server} $\ast$ \hyperlink{classgeneric__server_ac05c40bbf07c632b91e100a0e5528a84}{pinstance} = 0}\label{classgeneric__server_ac05c40bbf07c632b91e100a0e5528a84}
+
+\begin{DoxyCompactList}\small\item\em Pointer to singleton framework instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a singleton class and provides framework functionality. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classgeneric__server_ae3654bb1871f8ac406824ba39b8c6d6e}{\index{generic\-\_\-server@{generic\-\_\-server}!bb\-\_\-getline@{bb\-\_\-getline}}
+\index{bb\-\_\-getline@{bb\-\_\-getline}!generic_server@{generic\-\_\-server}}
+\subsubsection[{bb\-\_\-getline}]{\setlength{\rightskip}{0pt plus 5cm}int generic\-\_\-server\-::bb\-\_\-getline (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sav\-\_\-buffer, }
+\item[{size\-\_\-t}]{length, }
+\item[{size\-\_\-t}]{conn\-\_\-s}
+\end{DoxyParamCaption}
+)}}\label{classgeneric__server_ae3654bb1871f8ac406824ba39b8c6d6e}
+Asynchronous socket read utility.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt out}  & {\em sav\-\_\-buffer} & Buffer to store read data. \\
+\hline
+\mbox{\tt in}  & {\em length} & Maximum number of bytes to read from socket. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of bytes actually read, or zero on error. failure to read any data. 
+\end{DoxyReturn}
+\hypertarget{classgeneric__server_a4f1cd298834c12d725808673a1b89f5b}{\index{generic\-\_\-server@{generic\-\_\-server}!check\-\_\-plugin\-\_\-aliases@{check\-\_\-plugin\-\_\-aliases}}
+\index{check\-\_\-plugin\-\_\-aliases@{check\-\_\-plugin\-\_\-aliases}!generic_server@{generic\-\_\-server}}
+\subsubsection[{check\-\_\-plugin\-\_\-aliases}]{\setlength{\rightskip}{0pt plus 5cm}bool generic\-\_\-server\-::check\-\_\-plugin\-\_\-aliases (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$ \&}]{alias}
+\end{DoxyParamCaption}
+)}}\label{classgeneric__server_a4f1cd298834c12d725808673a1b89f5b}
+Checks for 'alias' plug-\/ins. An 'alias' is any plug-\/in that uses the same T\-C\-P port of primary plug-\/in. Framework would use one T\-C\-P port/socket to service all 'aliased' plug-\/ins. 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \&alias} & Reference to alias Vector within every \\
+\hline
+\end{DoxyParams}
+\hypertarget{classgeneric__server_a518621352c2fb76078cf56e41ca89606}{\index{generic\-\_\-server@{generic\-\_\-server}!create\-\_\-socket@{create\-\_\-socket}}
+\index{create\-\_\-socket@{create\-\_\-socket}!generic_server@{generic\-\_\-server}}
+\subsubsection[{create\-\_\-socket}]{\setlength{\rightskip}{0pt plus 5cm}S\-O\-C\-K\-E\-T generic\-\_\-server\-::create\-\_\-socket (
+\begin{DoxyParamCaption}
+\item[{int}]{port}
+\end{DoxyParamCaption}
+)}}\label{classgeneric__server_a518621352c2fb76078cf56e41ca89606}
+Creates a 'listen'ing socket for every plugin, sets socket to 'nonblocking' mode.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em port} & T\-C\-P port for socket to bind. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+socket descriptor on success or zero on error. 
+\end{DoxyReturn}
+\hypertarget{classgeneric__server_a62e814e9e573919dc2b94012caf835ad}{\index{generic\-\_\-server@{generic\-\_\-server}!init@{init}}
+\index{init@{init}!generic_server@{generic\-\_\-server}}
+\subsubsection[{init}]{\setlength{\rightskip}{0pt plus 5cm}int generic\-\_\-server\-::init (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classgeneric__server_a62e814e9e573919dc2b94012caf835ad}
+Reads master configuration file, loads plug-\/in shared libraries and initializes master Vector to store plug-\/ins. \hypertarget{classgeneric__server_a243ee0c97048a292a8fda0ab3d5217e0}{\index{generic\-\_\-server@{generic\-\_\-server}!load\-\_\-shared\-\_\-lib@{load\-\_\-shared\-\_\-lib}}
+\index{load\-\_\-shared\-\_\-lib@{load\-\_\-shared\-\_\-lib}!generic_server@{generic\-\_\-server}}
+\subsubsection[{load\-\_\-shared\-\_\-lib}]{\setlength{\rightskip}{0pt plus 5cm}G\-E\-N\-E\-R\-I\-C\-\_\-\-P\-L\-U\-G\-I\-N $\ast$ generic\-\_\-server\-::load\-\_\-shared\-\_\-lib (
+\begin{DoxyParamCaption}
+\item[{string}]{library\-\_\-image, }
+\item[{string}]{plugin\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{classgeneric__server_a243ee0c97048a292a8fda0ab3d5217e0}
+Dynamically loads plug-\/in shared library.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em library\-\_\-image} & Path to shared library image. \\
+\hline
+\mbox{\tt in}  & {\em plugin\-\_\-type} & P\-L\-U\-G\-I\-N\-\_\-\-T\-Y\-P\-E to load. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+function pointer to 'create\-\_\-instance()' factory method of loaded plug-\/in. N\-U\-L\-L on error. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{generic__server_8h}{generic\-\_\-server.\-h}\item 
+generic\-\_\-server.\-cpp\end{DoxyCompactItemize}

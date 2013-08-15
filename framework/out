@@ -1,0 +1,297 @@
+g++ -DHAVE_CONFIG_H -I. -I..    -DLINUX -I../generic_plugin -g -O2 -MT generic_server.o -MD -MP -MF .deps/generic_server.Tpo -c -o generic_server.o generic_server.cpp
+In file included from generic_server.cpp:40:0:
+control.h:33:31: error: ‘SOCKET’ was not declared in this scope
+control.h:33:48: error: expected primary-expression before ‘int’
+control.h:33:67: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+control.h:33:83: error: ‘plugin_p’ was not declared in this scope
+control.h:34:31: error: expected primary-expression before ‘int’
+control.h:34:45: error: ‘generic_server’ was not declared in this scope
+control.h:34:61: error: ‘conn’ was not declared in this scope
+control.h:34:65: error: expression list treated as compound expression in initializer [-fpermissive]
+control.h:35:35: error: ‘SOCKET’ was not declared in this scope
+control.h:35:56: error: expected primary-expression before ‘*’ token
+control.h:35:57: error: ‘ssl’ was not declared in this scope
+control.h:35:61: error: expected primary-expression before ‘int’
+control.h:35:80: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+control.h:35:96: error: ‘plugin_p’ was not declared in this scope
+control.h:36:35: error: expected primary-expression before ‘int’
+control.h:36:49: error: ‘generic_server’ was not declared in this scope
+control.h:36:65: error: ‘conn’ was not declared in this scope
+control.h:36:69: error: expression list treated as compound expression in initializer [-fpermissive]
+control.h:37:37: error: ‘SOCKET’ was not declared in this scope
+control.h:37:54: error: ‘generic_server’ was not declared in this scope
+control.h:37:70: error: ‘conn’ was not declared in this scope
+control.h:37:76: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+control.h:37:92: error: ‘plugin_p’ was not declared in this scope
+control.h:38:37: error: expected primary-expression before ‘int’
+control.h:38:51: error: expected primary-expression before ‘unsigned’
+control.h:38:72: error: expression list treated as compound expression in initializer [-fpermissive]
+control.h:39:50: error: ‘generic_server’ has not been declared
+control.h:39:72: error: ‘GENERIC_PLUGIN’ has not been declared
+control.h:41:61: error: ‘generic_server’ has not been declared
+control.h:42:34: error: ‘GENERIC_PLUGIN’ has not been declared
+control.h:44:44: error: ‘SOCKET’ has not been declared
+control.h:45:38: error: ‘SOCKET’ has not been declared
+control.h:46:26: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+control.h:46:42: error: ‘generic_plugin’ was not declared in this scope
+control.h:46:57: error: expected primary-expression before ‘unsigned’
+control.h:46:78: error: expression list treated as compound expression in initializer [-fpermissive]
+In file included from ../generic_plugin/generic_plugin.h:31:0,
+                 from generic_server.cpp:41:
+./generic_server.h:67:19: error: ‘SOCKET’ has not been declared
+./generic_server.h:68:2: error: ‘SOCKET’ does not name a type
+./generic_server.h:77:28: error: ‘GENERIC_PLUGIN’ has not been declared
+./generic_server.h:86:28: error: ‘SOCKET’ has not been declared
+./generic_server.h:87:21: error: ‘SOCKET’ has not been declared
+./generic_server.h:88:18: error: ‘SOCKET’ has not been declared
+./generic_server.h:97:2: error: ‘GENERIC_PLUGIN’ does not name a type
+./generic_server.h:98:10: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+./generic_server.h:98:26: error: template argument 1 is invalid
+./generic_server.h:98:26: error: template argument 2 is invalid
+./generic_server.h:98:29: error: expected ‘;’ at end of member declaration
+./generic_server.h:98:61: error: ISO C++ forbids declaration of ‘get_start_iterator’ with no type [-fpermissive]
+./generic_server.h:99:10: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+./generic_server.h:99:26: error: template argument 1 is invalid
+./generic_server.h:99:26: error: template argument 2 is invalid
+./generic_server.h:99:29: error: expected ‘;’ at end of member declaration
+./generic_server.h:99:29: error: declaration of ‘int generic_server::iterator’
+./generic_server.h:98:29: error: conflicts with previous declaration ‘int generic_server::iterator’
+./generic_server.h:99:59: error: ISO C++ forbids declaration of ‘get_end_iterator’ with no type [-fpermissive]
+./generic_server.h:100:10: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+./generic_server.h:100:26: error: template argument 1 is invalid
+./generic_server.h:100:26: error: template argument 2 is invalid
+./generic_server.h:100:29: error: expected ‘;’ at end of member declaration
+./generic_server.h:100:29: error: declaration of ‘int generic_server::iterator’
+./generic_server.h:98:29: error: conflicts with previous declaration ‘int generic_server::iterator’
+./generic_server.h:100:38: error: ‘itr’ does not name a type
+./generic_server.h:101:10: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+./generic_server.h:101:26: error: template argument 1 is invalid
+./generic_server.h:101:26: error: template argument 2 is invalid
+./generic_server.h:115:11: error: ‘GEN_PLUGIN_MUTEX’ was not declared in this scope
+./generic_server.h:115:27: error: template argument 2 is invalid
+./generic_server.h:115:27: error: template argument 4 is invalid
+./generic_server.h:117:14: error: ‘create_fp’ was not declared in this scope
+./generic_server.h:117:23: error: template argument 2 is invalid
+./generic_server.h:117:23: error: template argument 4 is invalid
+./generic_server.h:130:2: error: ‘GENERIC_PLUGIN’ does not name a type
+./generic_server.h:144:9: error: ‘GENERIC_PLUGIN’ does not name a type
+In file included from generic_server.cpp:41:0:
+../generic_plugin/generic_plugin.h:35:39: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘std::ostream& operator<<(std::ostream&, int&)’:
+../generic_plugin/generic_plugin.h:37:47: error: request for member ‘pinstance’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:40:90: error: request for member ‘plugin_type’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:41:89: error: request for member ‘plugin_name’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:42:45: error: request for member ‘local_ip_address’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:43:7: error: request for member ‘tls_enabled’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:44:33: error: request for member ‘port’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:46:33: error: request for member ‘port’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:47:17: error: request for member ‘v_plugin_aliases’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:47:52: error: request for member ‘v_plugin_aliases’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:52:91: error: request for member ‘plugin_type’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:54:46: error: request for member ‘local_ip_address’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:55:8: error: request for member ‘tls_enabled’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:56:34: error: request for member ‘port’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h:58:34: error: request for member ‘port’ in ‘p’, which is of non-class type ‘int’
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:64:1: error: ‘generic_plugin’ does not name a type
+../generic_plugin/generic_plugin.h:88:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int clear_aliases()’:
+../generic_plugin/generic_plugin.h:90:2: error: invalid use of ‘this’ in non-member function
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:95:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int set_plugin(std::string)’:
+../generic_plugin/generic_plugin.h:97:2: error: invalid use of ‘this’ in non-member function
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:102:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int set_conf_file(std::string)’:
+../generic_plugin/generic_plugin.h:104:9: error: ‘plugin_conf_file’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:109:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int set_plugin_name(std::string)’:
+../generic_plugin/generic_plugin.h:111:2: error: ‘plugin_name’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:116:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int set_plugin_number(std::string)’:
+../generic_plugin/generic_plugin.h:118:2: error: ‘plugin_number’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:123:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int set_plugin_path(std::string)’:
+../generic_plugin/generic_plugin.h:125:5: error: ‘plugin_lib_path’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:130:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int set_tls_flag(int)’:
+../generic_plugin/generic_plugin.h:132:2: error: ‘tls_enabled’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:137:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h:137:32: error: ‘SOCKET’ was not declared in this scope
+../generic_plugin/generic_plugin.h:138:1: error: expected ‘,’ or ‘;’ before ‘{’ token
+../generic_plugin/generic_plugin.h:144:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h:144:39: error: ‘SOCKET’ was not declared in this scope
+../generic_plugin/generic_plugin.h:145:1: error: expected ‘,’ or ‘;’ before ‘{’ token
+../generic_plugin/generic_plugin.h:151:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int set_port(int)’:
+../generic_plugin/generic_plugin.h:153:2: error: ‘port’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:158:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int add_plugin_alias(std::string)’:
+../generic_plugin/generic_plugin.h:160:2: error: ‘v_plugin_aliases’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:165:6: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘bool find_plugin_alias(std::string)’:
+../generic_plugin/generic_plugin.h:168:15: error: ‘v_plugin_aliases’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:175:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int aliases_count()’:
+../generic_plugin/generic_plugin.h:177:9: error: ‘v_plugin_aliases’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:181:8: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘std::string pop_alias()’:
+../generic_plugin/generic_plugin.h:185:15: error: ‘v_plugin_aliases’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:191:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int set_thread_id(int)’:
+../generic_plugin/generic_plugin.h:193:2: error: ‘thread_id’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:198:8: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘std::string get_plugin_path()’:
+../generic_plugin/generic_plugin.h:200:12: error: ‘plugin_lib_path’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:204:1: error: ‘SOCKET’ does not name a type
+../generic_plugin/generic_plugin.h:210:1: error: ‘SOCKET’ does not name a type
+../generic_plugin/generic_plugin.h:216:8: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘std::string get_plugin()’:
+../generic_plugin/generic_plugin.h:218:9: error: ‘plugin_type’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:222:8: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘std::string get_plugin_name()’:
+../generic_plugin/generic_plugin.h:224:9: error: ‘plugin_name’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:228:8: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘std::string get_conf_file()’:
+../generic_plugin/generic_plugin.h:230:16: error: ‘plugin_conf_file’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:234:8: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘std::string get_plugin_number()’:
+../generic_plugin/generic_plugin.h:236:9: error: ‘plugin_number’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:240:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int get_port()’:
+../generic_plugin/generic_plugin.h:242:9: error: ‘port’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:246:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int get_thread_id()’:
+../generic_plugin/generic_plugin.h:248:9: error: ‘thread_id’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:252:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int get_tls_flag()’:
+../generic_plugin/generic_plugin.h:254:9: error: ‘tls_enabled’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:258:6: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘bool get_validate_pluginid()’:
+../generic_plugin/generic_plugin.h:260:16: error: ‘validate_pluginid’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:264:1: error: ‘generic_plugin’ does not name a type
+../generic_plugin/generic_plugin.h:283:1: error: ‘generic_plugin’ does not name a type
+../generic_plugin/generic_plugin.h:296:1: error: ‘generic_plugin’ does not name a type
+../generic_plugin/generic_plugin.h:309:1: error: ‘SOCKET’ does not name a type
+../generic_plugin/generic_plugin.h:453:8: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h:459:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int get_plugin_params(std::string)’:
+../generic_plugin/generic_plugin.h:461:48: error: ‘pinstance’ was not declared in this scope
+../generic_plugin/generic_plugin.h:465:9: error: ‘networking’ was not declared in this scope
+../generic_plugin/generic_plugin.h:470:9: error: ‘verbose_level’ was not declared in this scope
+../generic_plugin/generic_plugin.h:476:4: error: ‘validate_pluginid’ was not declared in this scope
+../generic_plugin/generic_plugin.h:478:4: error: ‘validate_pluginid’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:485:1: error: ‘GEN_PLUGIN_MUTEX’ does not name a type
+../generic_plugin/generic_plugin.h:497:5: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h:497:32: error: ‘GEN_PLUGIN_MUTEX’ was not declared in this scope
+../generic_plugin/generic_plugin.h:498:1: error: expected ‘,’ or ‘;’ before ‘{’ token
+../generic_plugin/generic_plugin.h:509:6: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h:509:32: error: ‘GEN_PLUGIN_MUTEX’ was not declared in this scope
+../generic_plugin/generic_plugin.h:510:1: error: expected ‘,’ or ‘;’ before ‘{’ token
+../generic_plugin/generic_plugin.h:520:7: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int log(unsigned int, std::string)’:
+../generic_plugin/generic_plugin.h:522:45: error: ‘pinstance’ was not declared in this scope
+../generic_plugin/generic_plugin.h:524:32: error: ‘verbose_level’ was not declared in this scope
+../generic_plugin/generic_plugin.h: At global scope:
+../generic_plugin/generic_plugin.h:528:7: error: ‘generic_plugin’ has not been declared
+../generic_plugin/generic_plugin.h: In function ‘int log(unsigned int, char*)’:
+../generic_plugin/generic_plugin.h:530:45: error: ‘pinstance’ was not declared in this scope
+../generic_plugin/generic_plugin.h:532:32: error: ‘verbose_level’ was not declared in this scope
+generic_server.cpp: In member function ‘int generic_server::rollover_logs()’:
+generic_server.cpp:139:15: error: aggregate ‘generic_server::rollover_logs()::_stat stFileInfo’ has incomplete type and cannot be defined
+generic_server.cpp:154:31: error: ambiguous overload for ‘operator<<’ in ‘std::operator<< [with _Traits = std::char_traits<char>]((* & std::operator<< [with _CharT = char, _Traits = std::char_traits<char>, _Alloc = std::allocator<char>]((* & oss.std::basic_stringstream<char>::<anonymous>.std::basic_iostream<char>::<anonymous>), (*(const std::basic_string<char>*)(&((generic_server*)this)->generic_server::logname)))), ((const char*)".")) << i’
+generic_server.cpp:154:31: note: candidates are:
+/usr/include/c++/4.6/ostream:110:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>] <near match>
+/usr/include/c++/4.6/ostream:110:7: note:   no known conversion for argument 1 from ‘int’ to ‘std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&) {aka std::basic_ostream<char>& (*)(std::basic_ostream<char>&)}’
+/usr/include/c++/4.6/ostream:119:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>, std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>] <near match>
+/usr/include/c++/4.6/ostream:119:7: note:   no known conversion for argument 1 from ‘int’ to ‘std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&) {aka std::basic_ios<char>& (*)(std::basic_ios<char>&)}’
+/usr/include/c++/4.6/ostream:129:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>] <near match>
+/usr/include/c++/4.6/ostream:129:7: note:   no known conversion for argument 1 from ‘int’ to ‘std::ios_base& (*)(std::ios_base&)’
+/usr/include/c++/4.6/ostream:167:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:171:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:175:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:93:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char, _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/ostream:182:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/bits/ostream.tcc:107:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char, _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/ostream:193:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:202:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:206:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:211:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:215:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:223:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]
+/usr/include/c++/4.6/ostream:227:7: note: std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>] <near match>
+/usr/include/c++/4.6/ostream:227:7: note:   no known conversion for argument 1 from ‘int’ to ‘const void*’
+/usr/include/c++/4.6/bits/ostream.tcc:121:5: note: std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char, _Traits = std::char_traits<char>, std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>] <near match>
+/usr/include/c++/4.6/bits/ostream.tcc:121:5: note:   no known conversion for argument 1 from ‘int’ to ‘std::basic_ostream<char>::__streambuf_type* {aka std::basic_streambuf<char>*}’
+../generic_plugin/generic_plugin.h:35:10: note: std::ostream& operator<<(std::ostream&, int&)
+/usr/include/c++/4.6/ostream:473:5: note: std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char) [with _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/ostream:468:5: note: std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char) [with _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/ostream:462:5: note: std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char) [with _Traits = std::char_traits<char>]
+/usr/include/c++/4.6/ostream:456:5: note: std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char) [with _CharT = char, _Traits = std::char_traits<char>]
+generic_server.cpp:158:52: error: invalid use of incomplete type ‘struct generic_server::rollover_logs()::_stat’
+generic_server.cpp:139:9: error: forward declaration of ‘struct generic_server::rollover_logs()::_stat’
+generic_server.cpp: In member function ‘int generic_server::check_allocated_port(std::string, std::string)’:
+generic_server.cpp:251:10: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+generic_server.cpp:251:26: error: template argument 1 is invalid
+generic_server.cpp:251:26: error: template argument 2 is invalid
+generic_server.cpp:251:38: error: expected initializer before ‘it’
+generic_server.cpp:253:6: error: ‘it’ was not declared in this scope
+generic_server.cpp: In member function ‘int generic_server::check_enabled_plugin(std::string)’:
+generic_server.cpp:265:10: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+generic_server.cpp:265:26: error: template argument 1 is invalid
+generic_server.cpp:265:26: error: template argument 2 is invalid
+generic_server.cpp:265:38: error: expected initializer before ‘it’
+generic_server.cpp:267:12: error: ‘it’ was not declared in this scope
+generic_server.cpp: In member function ‘bool generic_server::check_plugin_aliases(std::vector<std::basic_string<char> >&)’:
+generic_server.cpp:279:13: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+generic_server.cpp:279:29: error: template argument 1 is invalid
+generic_server.cpp:279:29: error: template argument 2 is invalid
+generic_server.cpp:279:41: error: expected initializer before ‘it’
+generic_server.cpp:281:9: error: ‘it’ was not declared in this scope
+generic_server.cpp: In member function ‘int generic_server::remove_devices(std::map<std::basic_string<char>, int>&)’:
+generic_server.cpp:317:10: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+generic_server.cpp:317:26: error: template argument 1 is invalid
+generic_server.cpp:317:26: error: template argument 2 is invalid
+generic_server.cpp:317:38: error: expected initializer before ‘it’
+generic_server.cpp:322:12: error: ‘it’ was not declared in this scope
+generic_server.cpp:342:7: error: request for member ‘erase’ in ‘((generic_server*)this)->generic_server::v’, which is of non-class type ‘int’
+generic_server.cpp: In member function ‘int generic_server::remove_all_aliases()’:
+generic_server.cpp:355:13: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+generic_server.cpp:355:29: error: template argument 1 is invalid
+generic_server.cpp:355:29: error: template argument 2 is invalid
+generic_server.cpp:355:41: error: expected initializer before ‘it’
+generic_server.cpp:357:9: error: ‘it’ was not declared in this scope
+generic_server.cpp: In member function ‘int generic_server::init()’:
+generic_server.cpp:452:2: error: ‘GENERIC_PLUGIN’ was not declared in this scope
+generic_server.cpp:452:18: error: ‘plugin’ was not declared in this scope
+generic_server.cpp:490:89: error: ‘load_shared_lib’ was not declared in this scope
+generic_server.cpp:497:56: error: ‘initialize_plugin_object’ was not declared in this scope
+generic_server.cpp:500:5: error: request for member ‘push_back’ in ‘((generic_server*)this)->generic_server::v’, which is of non-class type ‘int’
+generic_server.cpp: At global scope:
+generic_server.cpp:563:1: error: ‘GENERIC_PLUGIN’ does not name a type
+generic_server.cpp:619:34: error: ‘int generic_server::socket_close’ is not a static member of ‘class generic_server’
+generic_server.cpp:619:34: error: ‘SOCKET’ was not declared in this scope
+generic_server.cpp:620:1: error: expected ‘,’ or ‘;’ before ‘{’ token
+make: *** [generic_server.o] Error 1

@@ -1,0 +1,104 @@
+\hypertarget{generic__server_8h}{\section{generic\-\_\-server.\-h File Reference}
+\label{generic__server_8h}\index{generic\-\_\-server.\-h@{generic\-\_\-server.\-h}}
+}
+
+
+Singleton class to manage framework state and provide utility functions. This class stores master Vector, where all plug-\/ins are stored. It provides mechanisms to access all loaded plug-\/ins, loads and unloads plug-\/ins and provides T\-C\-P socket and T\-L\-S functionality to plug-\/ins.  
+
+
+{\ttfamily \#include $<$map$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$iomanip$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$pthread.\-h$>$}\\*
+{\ttfamily \#include \char`\"{}sslserver.\-h\char`\"{}}\\*
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structthread__info}{thread\-\_\-info}
+\begin{DoxyCompactList}\small\item\em O\-S agnostic thread handle. \end{DoxyCompactList}\item 
+class \hyperlink{classgeneric__server}{generic\-\_\-server}
+\begin{DoxyCompactList}\small\item\em This is a singleton class and provides framework functionality. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{generic__server_8h_a166c2449cbc8389076f29f5a1360338e}{\#define {\bfseries N\-O\-\_\-\-L\-O\-G}~0}\label{generic__server_8h_a166c2449cbc8389076f29f5a1360338e}
+
+\item 
+\hypertarget{generic__server_8h_a773ce4735da5e1fff3b2d8276f387c66}{\#define {\bfseries L\-O\-G\-\_\-\-L\-O\-W}~1}\label{generic__server_8h_a773ce4735da5e1fff3b2d8276f387c66}
+
+\item 
+\hypertarget{generic__server_8h_acba232ea68a186481ceb5fba07165100}{\#define {\bfseries L\-O\-G\-\_\-\-M\-E\-D\-I\-U\-M}~2}\label{generic__server_8h_acba232ea68a186481ceb5fba07165100}
+
+\item 
+\hypertarget{generic__server_8h_a417293b78420d937a6bbbf010fc6adcc}{\#define {\bfseries L\-O\-G\-\_\-\-H\-I}~3}\label{generic__server_8h_a417293b78420d937a6bbbf010fc6adcc}
+
+\item 
+\hypertarget{generic__server_8h_a8b5173357adb02a86c027316e0acdfa0}{\#define {\bfseries M\-A\-X\-\_\-\-T\-H\-R\-E\-A\-D\-S}~100}\label{generic__server_8h_a8b5173357adb02a86c027316e0acdfa0}
+
+\item 
+\hypertarget{generic__server_8h_a0acf7475326cdcd31d690b72033de33a}{\#define {\bfseries P\-L\-U\-G\-I\-N\-\_\-\-N\-A\-M\-E}~0}\label{generic__server_8h_a0acf7475326cdcd31d690b72033de33a}
+
+\item 
+\hypertarget{generic__server_8h_a21b7d6fd8eee56a4c8cdc48429e60198}{\#define {\bfseries P\-L\-U\-G\-I\-N\-\_\-\-T\-Y\-P\-E}~1}\label{generic__server_8h_a21b7d6fd8eee56a4c8cdc48429e60198}
+
+\item 
+\hypertarget{generic__server_8h_a614217d263be1fb1a5f76e2ff7be19a2}{\#define {\bfseries P\-O\-R\-T}~2}\label{generic__server_8h_a614217d263be1fb1a5f76e2ff7be19a2}
+
+\item 
+\hypertarget{generic__server_8h_aaf281a3293faa0f4059da18b322a804d}{\#define {\bfseries P\-L\-U\-G\-I\-N\-\_\-\-N\-U\-M\-B\-E\-R}~3}\label{generic__server_8h_aaf281a3293faa0f4059da18b322a804d}
+
+\item 
+\hypertarget{generic__server_8h_a95036f1ad77e2e55143843ead838f1b1}{\#define {\bfseries S\-H\-A\-R\-E\-D\-\_\-\-L\-I\-B\-\_\-\-P\-A\-T\-H}~4}\label{generic__server_8h_a95036f1ad77e2e55143843ead838f1b1}
+
+\item 
+\hypertarget{generic__server_8h_a901ed78474cf25cc066ac8ed6feeb7f2}{\#define {\bfseries T\-L\-S\-\_\-\-F\-L\-A\-G}~5}\label{generic__server_8h_a901ed78474cf25cc066ac8ed6feeb7f2}
+
+\item 
+\hypertarget{generic__server_8h_ae1f345f3b00b5f96b674c53666f11910}{\#define {\bfseries P\-L\-U\-G\-I\-N\-\_\-\-C\-O\-N\-F}~6}\label{generic__server_8h_ae1f345f3b00b5f96b674c53666f11910}
+
+\item 
+\hypertarget{generic__server_8h_ab5889105dcd019008c9448dff61323f6}{\#define {\bfseries I\-N\-I\-T}~1}\label{generic__server_8h_ab5889105dcd019008c9448dff61323f6}
+
+\item 
+\hypertarget{generic__server_8h_af13687f5f794cb76cb8b30937ef38ebc}{\#define {\bfseries R\-E\-L\-O\-A\-D}~2}\label{generic__server_8h_af13687f5f794cb76cb8b30937ef38ebc}
+
+\item 
+\hypertarget{generic__server_8h_ad1a7019dcda61ca321bc82fc9d5e0550}{\#define {\bfseries T\-H\-R\-E\-A\-D\-\_\-\-F\-R\-E\-E}~0}\label{generic__server_8h_ad1a7019dcda61ca321bc82fc9d5e0550}
+
+\item 
+\hypertarget{generic__server_8h_a2586d2566a05fd0b7d660557d88cd96c}{\#define {\bfseries T\-H\-R\-E\-A\-D\-\_\-\-C\-O\-M\-P\-L\-E\-T\-E\-D}~2}\label{generic__server_8h_a2586d2566a05fd0b7d660557d88cd96c}
+
+\item 
+\hypertarget{generic__server_8h_afa05b71e37f439a18df0f360fbe83b62}{\#define {\bfseries T\-H\-R\-E\-A\-D\-\_\-\-A\-L\-L\-O\-C\-A\-T\-E\-D}~1}\label{generic__server_8h_afa05b71e37f439a18df0f360fbe83b62}
+
+\item 
+\hypertarget{generic__server_8h_a083914d2e7b7fe28b17b428efce415af}{\#define {\bfseries M\-A\-X\-\_\-\-S\-Z}~10000}\label{generic__server_8h_a083914d2e7b7fe28b17b428efce415af}
+
+\item 
+\hypertarget{generic__server_8h_a8897029964d595b2e8529a166b1f3c9c}{\#define {\bfseries M\-I\-N\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-\_\-\-N\-O}~0}\label{generic__server_8h_a8897029964d595b2e8529a166b1f3c9c}
+
+\item 
+\hypertarget{generic__server_8h_a49f547b306e130e07d95a7a4fd848f08}{\#define {\bfseries M\-A\-X\-\_\-\-R\-E\-Q\-U\-E\-S\-T\-\_\-\-N\-O}~100}\label{generic__server_8h_a49f547b306e130e07d95a7a4fd848f08}
+
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{generic__server_8h_a877c4c2e2b2e21aa81ed78993c4fc85d}{typedef struct \hyperlink{structthread__info}{thread\-\_\-info} \hyperlink{generic__server_8h_a877c4c2e2b2e21aa81ed78993c4fc85d}{T\-H\-R\-E\-A\-D\-\_\-\-I\-N\-F\-O}}\label{generic__server_8h_a877c4c2e2b2e21aa81ed78993c4fc85d}
+
+\begin{DoxyCompactList}\small\item\em O\-S agnostic thread handle. \end{DoxyCompactList}\item 
+\hypertarget{generic__server_8h_a9aee3b373ab8283d16a7b8303fc27904}{typedef G\-E\-N\-E\-R\-I\-C\-\_\-\-P\-L\-U\-G\-I\-N $\ast$($\ast$ \hyperlink{generic__server_8h_a9aee3b373ab8283d16a7b8303fc27904}{create\-\_\-fp} )()}\label{generic__server_8h_a9aee3b373ab8283d16a7b8303fc27904}
+
+\begin{DoxyCompactList}\small\item\em Every plug-\/in should have a function with following prototype. This is the factory method\-: 'create\-\_\-instance()' within shared library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Singleton class to manage framework state and provide utility functions. This class stores master Vector, where all plug-\/ins are stored. It provides mechanisms to access all loaded plug-\/ins, loads and unloads plug-\/ins and provides T\-C\-P socket and T\-L\-S functionality to plug-\/ins. \begin{DoxyAuthor}{Author}
+Suraj Vijayan
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+\-: 2011/12/27 14\-:16\-:20
+\end{DoxyDate}
+Contact\-: \href{mailto:suraj@broadcom.com}{\tt suraj@broadcom.\-com} 
