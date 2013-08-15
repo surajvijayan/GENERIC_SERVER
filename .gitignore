@@ -1,6 +1,5 @@
 Makefile
 autom4te.cache/
-missing
 .deps/
 .dirstamp
 .libs/
