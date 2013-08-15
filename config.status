@@ -571,7 +571,7 @@ FGREP='/bin/grep -F'
 LD='/usr/bin/ld'
 NM='/usr/bin/nm -B'
 LN_S='ln -s'
-max_cmd_len='1572864'
+max_cmd_len='805306365'
 ac_objext='o'
 exeext=''
 lt_unset='unset'
@@ -880,12 +880,12 @@ S["am__EXEEXT_FALSE"]=""
 S["am__EXEEXT_TRUE"]="#"
 S["LTLIBOBJS"]=""
 S["LIBOBJS"]=""
-S["am__fastdepCXX_FALSE"]=""
-S["am__fastdepCXX_TRUE"]="#"
-S["CXXDEPMODE"]="depmode=none"
-S["am__fastdepCC_FALSE"]=""
-S["am__fastdepCC_TRUE"]="#"
-S["CCDEPMODE"]="depmode=none"
+S["am__fastdepCXX_FALSE"]="#"
+S["am__fastdepCXX_TRUE"]=""
+S["CXXDEPMODE"]="depmode=gcc3"
+S["am__fastdepCC_FALSE"]="#"
+S["am__fastdepCC_TRUE"]=""
+S["CCDEPMODE"]="depmode=gcc3"
 S["am__nodep"]="_no"
 S["AMDEPBACKSLASH"]="\\"
 S["AMDEP_FALSE"]="#"

@@ -1,6 +1,5 @@
 Makefile
 autom4te.cache/
-depcomp
 missing
 .deps/
 .dirstamp
