@@ -1405,12 +1405,12 @@ int generic_server::ssl_async_write(SSL *ssl,char *buf,int size)
 	}
 	if(ssl_response < 0)
 	{
-		log(LOG_LOW,LOG_LOW,oss.str());
+		//log(LOG_LOW,LOG_LOW,oss.str());
 		return(ssl_response);
 	}
 	if(ssl_response == 0)
 	{
-		log(LOG_LOW,LOG_LOW,oss.str());
+		//log(LOG_LOW,LOG_LOW,oss.str());
 		return(0);
 	}
 	return(1);
@@ -1471,12 +1471,12 @@ int generic_server::ssl_async_read(SSL *ssl,char *buf,int size)
 	}
 	if(ssl_response < 0)
 	{
-		log(LOG_LOW,LOG_LOW,oss.str());
+		//log(LOG_LOW,LOG_LOW,oss.str());
 		return(ssl_response);
 	}
 	if(ssl_response == 0)
 	{
-		log(LOG_LOW,LOG_LOW,oss.str());
+		//log(LOG_LOW,LOG_LOW,oss.str());
 		return(0);
 	}
 	return(status);
