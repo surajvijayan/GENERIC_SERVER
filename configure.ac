@@ -22,6 +22,8 @@ AM_INIT_AUTOMAKE
 AC_PROG_CXX
 # Checks for libraries.
 AC_CHECK_LIB([ssl], [SSL_library_init])
+AC_CHECK_LIB([crypto], [ERR_free_strings])
+AC_CHECK_LIB([dl], [dlopen])
 # Checks for header files.
 AC_HEADER_RESOLV
 AC_CHECK_HEADERS([arpa/inet.h fcntl.h netdb.h netinet/in.h stdlib.h string.h sys/socket.h syslog.h unistd.h])
