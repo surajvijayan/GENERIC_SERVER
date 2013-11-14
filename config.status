@@ -437,7 +437,7 @@ Copyright (C) 2012 Free Software Foundation, Inc.
 This config.status script is free software; the Free Software Foundation
 gives unlimited permission to copy, distribute and modify it."
 
-ac_pwd='/tmp/GENERIC_SERVER'
+ac_pwd='/home/suraj/GENERIC_SERVER'
 srcdir='.'
 INSTALL='/usr/bin/install -c'
 MKDIR_P='/bin/mkdir -p'
@@ -900,12 +900,12 @@ S["am__leading_dot"]="."
 S["mkdir_p"]="/bin/mkdir -p"
 S["MKDIR_P"]="/bin/mkdir -p"
 S["INSTALL_STRIP_PROGRAM"]="$(install_sh) -c -s"
-S["install_sh"]="${SHELL} /tmp/GENERIC_SERVER/install-sh"
-S["MAKEINFO"]="${SHELL} /tmp/GENERIC_SERVER/missing --run makeinfo"
-S["AUTOHEADER"]="${SHELL} /tmp/GENERIC_SERVER/missing --run autoheader"
-S["AUTOMAKE"]="${SHELL} /tmp/GENERIC_SERVER/missing --run automake-1.11"
-S["AUTOCONF"]="${SHELL} /tmp/GENERIC_SERVER/missing --run autoconf"
-S["ACLOCAL"]="${SHELL} /tmp/GENERIC_SERVER/missing --run aclocal-1.11"
+S["install_sh"]="${SHELL} /home/suraj/GENERIC_SERVER/install-sh"
+S["MAKEINFO"]="${SHELL} /home/suraj/GENERIC_SERVER/missing --run makeinfo"
+S["AUTOHEADER"]="${SHELL} /home/suraj/GENERIC_SERVER/missing --run autoheader"
+S["AUTOMAKE"]="${SHELL} /home/suraj/GENERIC_SERVER/missing --run automake-1.11"
+S["AUTOCONF"]="${SHELL} /home/suraj/GENERIC_SERVER/missing --run autoconf"
+S["ACLOCAL"]="${SHELL} /home/suraj/GENERIC_SERVER/missing --run aclocal-1.11"
 S["VERSION"]="0.0.0.9"
 S["PACKAGE"]="generic_server"
 S["CYGPATH_W"]="echo"
