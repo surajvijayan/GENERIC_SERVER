@@ -450,7 +450,7 @@ int terminate_ssl_client_session(SSL *ssl,generic_server *fwork, GENERIC_PLUGIN 
 		}
 	}
     plugin_p->shutdown_plugin(); 
-    os  << " Thr.ID:" << thread_no << " ChipID:" << plugin_p->get_plugin_name() << " Quitting thread." << sendbuf;
+    os  << " Thr.ID:" << thread_no << " Plugin:" << plugin_p->get_plugin_name() << " Quitting thread." << sendbuf;
     fwork->log(LOG_LOW,LOG_LOW,os.str());
 	fwork->socket_close(SSL_get_fd(ssl));
 	SSL_free((SSL *)ssl);
