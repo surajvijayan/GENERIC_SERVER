@@ -1,3 +1,0 @@
-LIBRARY "sample.dll"
-EXPORTS
-	create_instance
