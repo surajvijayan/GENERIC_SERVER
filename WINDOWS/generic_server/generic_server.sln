@@ -18,6 +18,10 @@ Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "GenericServer", "GenericSer
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample_client", "sample_client\sample_client.vcxproj", "{2E101C9D-10E2-46B8-BC51-E203AFB46897}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample_client2", "sample_client2\sample_client2.vcxproj", "{F7627264-4D12-4452-9A68-6DD8577DCDCE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "sample2_plugin", "sample2_plugin\sample2_plugin.vcxproj", "{6A456DB8-534E-4D58-A00B-47CD7FDDB655}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -42,6 +46,14 @@ Global
 		{2E101C9D-10E2-46B8-BC51-E203AFB46897}.Debug|Win32.Build.0 = Debug|Win32
 		{2E101C9D-10E2-46B8-BC51-E203AFB46897}.Release|Win32.ActiveCfg = Release|Win32
 		{2E101C9D-10E2-46B8-BC51-E203AFB46897}.Release|Win32.Build.0 = Release|Win32
+		{F7627264-4D12-4452-9A68-6DD8577DCDCE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7627264-4D12-4452-9A68-6DD8577DCDCE}.Debug|Win32.Build.0 = Debug|Win32
+		{F7627264-4D12-4452-9A68-6DD8577DCDCE}.Release|Win32.ActiveCfg = Release|Win32
+		{F7627264-4D12-4452-9A68-6DD8577DCDCE}.Release|Win32.Build.0 = Release|Win32
+		{6A456DB8-534E-4D58-A00B-47CD7FDDB655}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6A456DB8-534E-4D58-A00B-47CD7FDDB655}.Debug|Win32.Build.0 = Debug|Win32
+		{6A456DB8-534E-4D58-A00B-47CD7FDDB655}.Release|Win32.ActiveCfg = Release|Win32
+		{6A456DB8-534E-4D58-A00B-47CD7FDDB655}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

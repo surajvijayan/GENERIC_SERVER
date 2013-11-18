@@ -112,9 +112,20 @@
 *    This is the shared library for sample plug-in.
 *<BR>
 *<BR>
+*\li libsample2.1.0.so
+*<BR>
+*    This is the shared library for sample2 plug-in. Sample2 plug-in implements a light-weight secure,
+*    file upload functionality. An utility sample2_client can be used to interface with this plug-in.
+*<BR>
+*<BR>
 *\li sample_client
 *<BR>
-*    This is a sample client program that can be used to interface with GENERIC_SERVER.
+*    This is a sample client program that can be used to interface with GENERIC_SERVER plug-in named: sample. 
+*<BR>
+*<BR>
+*\li sample2_client
+*<BR>
+*    This is a sample client program that can be used to interface with GENERIC_SERVER plug-in named: sample2.
 *<BR>
 *<BR>
 *\subsection BW	Windows
@@ -134,8 +145,13 @@
 *	\li sample_plugin
 *<BR>
 *	Builds sample_plugin.dll
-*	When building on Windows, please start off by building generic_plugin project. generic_plugin.lib
-*	is required by generic_server and sample_plugin projects.
+*<BR>
+*<BR>
+*	\li sample2_plugin
+*<BR>
+*	Builds sample2_plugin.dll
+*   Sample2 plug-in implements a light-weight secure,file upload functionality. An utility sample2_client 
+*   can be used to interface with this plug-in.	
 *<BR>
 *<BR>
 *\li sample_client
@@ -143,6 +159,12 @@
 *    This is a sample client program that can be used to interface with GENERIC_SERVER.
 *<BR>
 *<BR>
+*\li sample2_client
+*<BR>
+*    This is a sample client program that can be used to interface with GENERIC_SERVER plug-in named: sample2.
+*<BR>
+*<BR>
+
 *\li GenericServer
 *<BR>
 *	 This is the Windows installer project. It creates an .msi file.
@@ -221,10 +243,8 @@
 *	#PLUGIN_NAME|PLUGIN_TYPE|TCP_PORT|PLUGIN_NUMBER|PLUGIN_SHARED_LIBRARY|TLS_FLAG|PLUGIN_SPECIFIC_CONF_FILE
 *	#PLUGIN_SPECIFIC_CONF_FILE and PLUGIN LIB path is relative to server install directory
 *	#
-*	SAMPLE1|SAMPLE_TYPE|60103|1|sample/libsample.1.0.so|1|sample/sample.conf
-*	SAMPLE2|SAMPLE_TYPE|60103|2|sample/libsample.1.0.so|1|sample/sample.conf
-*	SAMPLE3|SAMPLE3_TYPE|60105|3|sample3/libsample.1.0.so|1|sample3/sample3.conf
-*	SAMPLE4|SAMPLE4_TYPE|60106|4|sample4/libsample.1.0.so|1|sample4/sample4.conf
+*	SAMPLE1|SAMPLE|60103|1|sample/libsample.1.0.so|1|sample/sample.conf
+*	SAMPLE2|FILE_UPLOAD|60104|1|sample2/libsample2.1.0.so|1|sample2/sample2.conf
 </PRE>
 *<BR>
 *<BR>

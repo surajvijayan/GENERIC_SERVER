@@ -40,7 +40,9 @@ AC_CONFIG_FILES([Makefile
          generic_plugin/Makefile
          framework/Makefile
          sample_client/Makefile
+         sample_client2/Makefile
          plugins/sample/Makefile
+         plugins/sample2/Makefile
          CERT/Makefile
          conf/generic_server.conf
          conf/Makefile])

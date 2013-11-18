@@ -156,7 +156,7 @@ unsigned _stdcall ssl_thread_fn(void *inp_arg)
         if(status == 0)
             throw (char *) "86 SSL_set_fd failed.";
         if(fwork->get_verify_client())
-            SSL_set_verify(ssl,SSL_VERIFY_PEER,NULL);
+            SSL_set_verify(ssl,SSL_VERIFY_PEER|SSL_VERIFY_FAIL_IF_NO_PEER_CERT,NULL);
         status = fwork->ssl_async_accept((SSL *)ssl);
         if(status == 0)
             throw (char *) "87 SSL_accept failed.";

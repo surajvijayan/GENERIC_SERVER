@@ -454,7 +454,7 @@ int generic_server::get_server_params(string line,int start_type)
     }
     if (line.size() > 14 && line.compare(0,14,"VERIFY_CLIENT=") == 0)
     {
-		if(atoi(line.substr(12).c_str()))
+		if(atoi(line.substr(14).c_str()))
 			verify_client = true;
 		else
 			verify_client = false;

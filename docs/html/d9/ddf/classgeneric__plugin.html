@@ -36,7 +36,8 @@
 <p>Inheritance diagram for generic_plugin:
 <p><center><img src="../../d9/ddf/classgeneric__plugin.png" usemap="#generic_plugin_map" border="0" alt=""></center>
 <map name="generic_plugin_map">
-<area href="../../db/da1/classsample__plugin.html" alt="sample_plugin" shape="rect" coords="0,56,96,80">
+<area href="../../d4/deb/classsample2__plugin.html" alt="sample2_plugin" shape="rect" coords="0,56,99,80">
+<area href="../../db/da1/classsample__plugin.html" alt="sample_plugin" shape="rect" coords="109,56,208,80">
 </map>
 <a href="../../d9/df7/classgeneric__plugin-members.html">List of all members.</a><table border="0" cellpadding="0" cellspacing="0">
 <tr><td></td></tr>
@@ -396,13 +397,13 @@ Framework presents configuration information from plug-in conf file to be proces
 <dl compact><dt><b>Returns:</b></dt><dd>1 on success, 0 on failure. </dd></dl>
 
 <p>
-Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#843d0150ef2dc39999b6f1061b0e4eaa">sample_plugin</a>.
+Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#843d0150ef2dc39999b6f1061b0e4eaa">sample_plugin</a>, and <a class="el" href="../../d4/deb/classsample2__plugin.html#721f8a19856836ec75ccb719afbc8bd7">sample2_plugin</a>.
 <p>
 Definition at line <a class="el" href="../../d3/dd8/generic__plugin_8cpp-source.html#l00422">422</a> of file <a class="el" href="../../d3/dd8/generic__plugin_8cpp-source.html">generic_plugin.cpp</a>.
 <p>
 References <a class="el" href="../../da/ddb/generic__plugin_8h-source.html#l00125">networking</a>, <a class="el" href="../../da/ddb/generic__plugin_8h-source.html#l00139">pinstance</a>, <a class="el" href="../../da/ddb/generic__plugin_8h-source.html#l00128">validate_plugin</a>, and <a class="el" href="../../da/ddb/generic__plugin_8h-source.html#l00125">verbose_level</a>.
 <p>
-Referenced by <a class="el" href="../../d3/d15/sample_8cpp-source.html#l00195">sample_plugin::get_plugin_params()</a>, and <a class="el" href="../../de/dd9/generic__server_8cpp-source.html#l00676">generic_server::plugin_read_conf_file()</a>.<div class="fragment"><pre class="fragment"><a name="l00423"></a>00423 {
+Referenced by <a class="el" href="../../d7/daf/sample2_8cpp-source.html#l00227">sample2_plugin::get_plugin_params()</a>, <a class="el" href="../../d3/d15/sample_8cpp-source.html#l00195">sample_plugin::get_plugin_params()</a>, and <a class="el" href="../../de/dd9/generic__server_8cpp-source.html#l00676">generic_server::plugin_read_conf_file()</a>.<div class="fragment"><pre class="fragment"><a name="l00423"></a>00423 {
 <a name="l00424"></a>00424     <a class="code" href="../../d8/d97/classgeneric__server.html">generic_server</a> *fwork = (<a class="code" href="../../d8/d97/classgeneric__server.html">generic_server</a> *) <a class="code" href="../../d9/ddf/classgeneric__plugin.html#a8250a3a8c1c454ff2123f048ed0f69b">pinstance</a>;
 <a name="l00425"></a>00425 
 <a name="l00426"></a>00426     <span class="keywordflow">if</span>(line.size() &gt; 11 &amp;&amp; line.compare(0,11,<span class="stringliteral">"NETWORKING="</span>) == 0)
@@ -489,7 +490,7 @@ This method gets invoked whenever a new client session gets initiated. <dl compa
 <dl compact><dt><b>Returns:</b></dt><dd>1 on success, 0 on failure. </dd></dl>
 
 <p>
-Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#6471b04e68e7bf41f228bcecf2a13d65">sample_plugin</a>.
+Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#6471b04e68e7bf41f228bcecf2a13d65">sample_plugin</a>, and <a class="el" href="../../d4/deb/classsample2__plugin.html#c2ca020ba4657019f8385fc35417d79b">sample2_plugin</a>.
 <p>
 Definition at line <a class="el" href="../../da/ddb/generic__plugin_8h-source.html#l00163">163</a> of file <a class="el" href="../../da/ddb/generic__plugin_8h-source.html">generic_plugin.h</a>.
 <p>
@@ -542,7 +543,7 @@ Framework presents client input data to plug-in to process. <dl compact><dt><b>P
 <dl compact><dt><b>Returns:</b></dt><dd>TERMINATE_SESSION to indicate plug-in done with the session with client or CONTINUE_SESSION to indicate plug-in want to continue session with client and process more requests. </dd></dl>
 
 <p>
-Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#1efb17d5f19353e70c24989c0355493b">sample_plugin</a>.
+Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#1efb17d5f19353e70c24989c0355493b">sample_plugin</a>, and <a class="el" href="../../d4/deb/classsample2__plugin.html#5b198734da620daad4b84e6f5a4318ad">sample2_plugin</a>.
 <p>
 Definition at line <a class="el" href="../../da/ddb/generic__plugin_8h-source.html#l00183">183</a> of file <a class="el" href="../../da/ddb/generic__plugin_8h-source.html">generic_plugin.h</a>.<div class="fragment"><pre class="fragment"><a name="l00183"></a>00183 {<span class="keywordflow">return</span>(0);};
 </pre></div>
@@ -606,7 +607,7 @@ This method gets invoked by the framework once per plug-in type when it is getti
 </ul>
 
 <p>
-Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#0da6ae3e83e66c9520a2ab5eca736be3">sample_plugin</a>.
+Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#0da6ae3e83e66c9520a2ab5eca736be3">sample_plugin</a>, and <a class="el" href="../../d4/deb/classsample2__plugin.html#57d74374353ae5b7ba56fc60fc4728dd">sample2_plugin</a>.
 <p>
 Definition at line <a class="el" href="../../da/ddb/generic__plugin_8h-source.html#l00197">197</a> of file <a class="el" href="../../da/ddb/generic__plugin_8h-source.html">generic_plugin.h</a>.
 <p>
@@ -635,7 +636,7 @@ Referenced by <a class="el" href="../../de/dd9/generic__server_8cpp-source.html#
 <p>
 This is the opposite of 'server_init()', framework invokes this method when a plug-in is removed from <a class="el" href="../../d8/d97/classgeneric__server.html">generic_server</a> conf file. Similar to 'server_init()', 'server_shutdown()' gets invoked only once when the last plug-in of a plug-in_type is removed. 
 <p>
-Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#7b2a9be3de26aac13516d66a19f9538c">sample_plugin</a>.
+Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#7b2a9be3de26aac13516d66a19f9538c">sample_plugin</a>, and <a class="el" href="../../d4/deb/classsample2__plugin.html#fac82730eeae1ddd9ca04eb640b20113">sample2_plugin</a>.
 <p>
 Definition at line <a class="el" href="../../da/ddb/generic__plugin_8h-source.html#l00203">203</a> of file <a class="el" href="../../da/ddb/generic__plugin_8h-source.html">generic_plugin.h</a>.<div class="fragment"><pre class="fragment"><a name="l00203"></a>00203 {<span class="keywordflow">return</span>(1);};
 </pre></div>
@@ -662,7 +663,7 @@ Definition at line <a class="el" href="../../da/ddb/generic__plugin_8h-source.ht
 <p>
 This is the opposite of 'plugin_init()', framework invokes this method when a client session is getting terminated. 
 <p>
-Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#ee66197c3b96fd333b20f0e6e09678de">sample_plugin</a>.
+Reimplemented in <a class="el" href="../../db/da1/classsample__plugin.html#ee66197c3b96fd333b20f0e6e09678de">sample_plugin</a>, and <a class="el" href="../../d4/deb/classsample2__plugin.html#cb75f172d3d76de58d577b57ac5219e5">sample2_plugin</a>.
 <p>
 Definition at line <a class="el" href="../../da/ddb/generic__plugin_8h-source.html#l00215">215</a> of file <a class="el" href="../../da/ddb/generic__plugin_8h-source.html">generic_plugin.h</a>.
 <p>
@@ -751,7 +752,7 @@ Referenced by <a class="el" href="../../d3/dd8/generic__plugin_8cpp-source.html#
 </div><p>
 <hr>The documentation for this class was generated from the following files:<ul>
 <li>generic_plugin/<a class="el" href="../../da/ddb/generic__plugin_8h-source.html">generic_plugin.h</a><li>generic_plugin/<a class="el" href="../../d3/dd8/generic__plugin_8cpp-source.html">generic_plugin.cpp</a></ul>
-<hr size="1"><address style="align: right;"><small>Generated on Tue Aug 6 17:08:26 2013 for GENERIC_SERVER by&nbsp;
+<hr size="1"><address style="align: right;"><small>Generated on Mon Nov 18 12:03:31 2013 for GENERIC_SERVER by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="../../doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
 </body>

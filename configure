@@ -16199,7 +16199,7 @@ _ACEOF
 fi
 done
 
-ac_config_files="$ac_config_files Makefile generic_plugin/Makefile framework/Makefile sample_client/Makefile plugins/sample/Makefile CERT/Makefile conf/generic_server.conf conf/Makefile"
+ac_config_files="$ac_config_files Makefile generic_plugin/Makefile framework/Makefile sample_client/Makefile sample_client2/Makefile plugins/sample/Makefile plugins/sample2/Makefile CERT/Makefile conf/generic_server.conf conf/Makefile"
 
 cat >confcache <<\_ACEOF
 # This file is a shell script that caches the results of configure
@@ -17304,7 +17304,9 @@ do
     "generic_plugin/Makefile") CONFIG_FILES="$CONFIG_FILES generic_plugin/Makefile" ;;
     "framework/Makefile") CONFIG_FILES="$CONFIG_FILES framework/Makefile" ;;
     "sample_client/Makefile") CONFIG_FILES="$CONFIG_FILES sample_client/Makefile" ;;
+    "sample_client2/Makefile") CONFIG_FILES="$CONFIG_FILES sample_client2/Makefile" ;;
     "plugins/sample/Makefile") CONFIG_FILES="$CONFIG_FILES plugins/sample/Makefile" ;;
+    "plugins/sample2/Makefile") CONFIG_FILES="$CONFIG_FILES plugins/sample2/Makefile" ;;
     "CERT/Makefile") CONFIG_FILES="$CONFIG_FILES CERT/Makefile" ;;
     "conf/generic_server.conf") CONFIG_FILES="$CONFIG_FILES conf/generic_server.conf" ;;
     "conf/Makefile") CONFIG_FILES="$CONFIG_FILES conf/Makefile" ;;

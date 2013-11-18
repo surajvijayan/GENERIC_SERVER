@@ -525,12 +525,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_66C688F5DFA04154AD774D5B3B7EE027"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_681CF02FE1D34FE8BD3471BF52F94F32"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -819,6 +813,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_97F8D4F039D347C1B7D25D86360454CB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_987BEFB80FAA49818068509BA51AB918"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -873,6 +873,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_9F080C8954B94C82AAD79F01C82A7C95"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_9F9C5A67C521494DB4B4F7179D8E5891"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -910,6 +916,12 @@
         "Entry"
         {
         "MsmKey" = "8:_A66ED49F88B04B13A04F4B9F407E9127"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A7577C0C2D45468E83FEF483BE62D008"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1036,6 +1048,12 @@
         "Entry"
         {
         "MsmKey" = "8:_CA0F22C389C94A26BB1A38D11FC85B54"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_CB3DB64EEF804ACF96BC56B3EECE3363"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -1173,6 +1191,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_DFFCF6CB14A6410691CC6F06E7235198"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_E38195AEE68F45A6831133B74F9DB484"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -1288,6 +1312,12 @@
         "Entry"
         {
         "MsmKey" = "8:_F80DAD35608940568E0F6B1357CCD7E0"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F8233E56F800466296C234B718AA750B"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -3112,26 +3142,6 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_66C688F5DFA04154AD774D5B3B7EE027"
-            {
-            "SourcePath" = "8:..\\sample_plugin\\sample_plugin.conf"
-            "TargetName" = "8:sample_plugin.conf"
-            "Tag" = "8:"
-            "Folder" = "8:_490644861BE647898DA426BEF6967E1B"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_681CF02FE1D34FE8BD3471BF52F94F32"
             {
             "SourcePath" = "8:..\\..\\..\\docs\\html\\search\\search_l.png"
@@ -4092,6 +4102,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_97F8D4F039D347C1B7D25D86360454CB"
+            {
+            "SourcePath" = "8:..\\..\\..\\plugins\\sample2\\sample2.conf"
+            "TargetName" = "8:sample2.conf"
+            "Tag" = "8:"
+            "Folder" = "8:_14814B076A85469A976F2F5616C3EABD"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_987BEFB80FAA49818068509BA51AB918"
             {
             "SourcePath" = "8:..\\..\\..\\docs\\html\\search\\defines_72.html"
@@ -4272,6 +4302,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9F080C8954B94C82AAD79F01C82A7C95"
+            {
+            "SourcePath" = "8:..\\ssleay32.dll"
+            "TargetName" = "8:ssleay32.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_023098B80B2E486AA6F73271CB8A14B4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9F9C5A67C521494DB4B4F7179D8E5891"
             {
             "SourcePath" = "8:..\\..\\..\\docs\\html\\search\\all_63.js"
@@ -4398,6 +4448,26 @@
             "TargetName" = "8:dir_000000.html"
             "Tag" = "8:"
             "Folder" = "8:_C9CCFB75475643AFA8D631301BA01671"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A7577C0C2D45468E83FEF483BE62D008"
+            {
+            "SourcePath" = "8:..\\sample2_plugin\\Release\\sample2_plugin.dll"
+            "TargetName" = "8:sample2_plugin.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_14814B076A85469A976F2F5616C3EABD"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -4818,6 +4888,26 @@
             "TargetName" = "8:generic_plugin.dll"
             "Tag" = "8:"
             "Folder" = "8:_40786D1728974F11A0DA76F6A6565489"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CB3DB64EEF804ACF96BC56B3EECE3363"
+            {
+            "SourcePath" = "8:..\\libeay32.dll"
+            "TargetName" = "8:libeay32.dll"
+            "Tag" = "8:"
+            "Folder" = "8:_023098B80B2E486AA6F73271CB8A14B4"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -5272,6 +5362,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DFFCF6CB14A6410691CC6F06E7235198"
+            {
+            "SourcePath" = "8:..\\sample_client2\\Release\\sample_client2.exe"
+            "TargetName" = "8:sample_client2.exe"
+            "Tag" = "8:"
+            "Folder" = "8:_023098B80B2E486AA6F73271CB8A14B4"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_E38195AEE68F45A6831133B74F9DB484"
             {
             "SourcePath" = "8:..\\..\\..\\docs\\html\\ftv2ns.png"
@@ -5672,6 +5782,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F8233E56F800466296C234B718AA750B"
+            {
+            "SourcePath" = "8:..\\..\\..\\plugins\\sample\\sample.conf"
+            "TargetName" = "8:sample.conf"
+            "Tag" = "8:"
+            "Folder" = "8:_490644861BE647898DA426BEF6967E1B"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F8E1F334E8A8488B9B412F5F90204F02"
             {
             "SourcePath" = "8:..\\..\\..\\docs\\html\\annotated.html"
@@ -5779,6 +5909,17 @@
             "Property" = "8:TARGETDIR"
                 "Folders"
                 {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_023098B80B2E486AA6F73271CB8A14B4"
+                    {
+                    "Name" = "8:sample_client2"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_F3008965AFBA4C27B0AAAAEEA65537EA"
+                        "Folders"
+                        {
+                        }
+                    }
                     "{9EF0B969-E518-4E46-987F-47570745A589}:_278375E19F2B4F92882FBE26BA77F396"
                     {
                     "Name" = "8:plugins"
@@ -5788,6 +5929,17 @@
                     "Property" = "8:_4DB1F697D81D4132BAC34D3582CC8E0C"
                         "Folders"
                         {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_14814B076A85469A976F2F5616C3EABD"
+                            {
+                            "Name" = "8:sample2_plugin"
+                            "AlwaysCreate" = "11:FALSE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:FALSE"
+                            "Property" = "8:_FA42BFC5D49E46DEA657F0521D9C0D30"
+                                "Folders"
+                                {
+                                }
+                            }
                             "{9EF0B969-E518-4E46-987F-47570745A589}:_490644861BE647898DA426BEF6967E1B"
                             {
                             "Name" = "8:sample_plugin"
@@ -51118,7 +51270,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:GenericServer"
         "ProductCode" = "8:{F7D26BD5-7B0B-46C1-AF55-B79D9BDAB361}"
-        "PackageCode" = "8:{BC014B75-FDF0-48E1-956A-9BA743E42FDE}"
+        "PackageCode" = "8:{03287C03-97C1-4C48-B43E-8C2A956C2247}"
         "UpgradeCode" = "8:{FB924F6C-AD51-44FA-AE27-AFD85A75ABB7}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

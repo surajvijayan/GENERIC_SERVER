@@ -14,7 +14,20 @@
 	License along with this library; if not, write to the Free Software
 	Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 */
+#include <iostream>
+#include <fstream>
+#include <algorithm>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <map>
+#include <utility>
+using namespace std;
+
 #include "sslserver.h"
+#include "generic_plugin.h"
+#include "generic_server.h"
+#include "control.h"
 
 /// Struct to store OS agnostic mutex. Required for Openssl locking functions.
 struct CRYPTO_dynlock_value
@@ -154,6 +167,8 @@ int SSLServer::set_ca_cert(string ca_cert)
 
 int SSLServer::CreateCTX(void) 
 {
+generic_server *fwork = generic_server::pinstance;
+ostringstream oss;
 // The method describes which SSL protocol we will be using.
 #if (OPENSSL_VERSION_NUMBER >= 0x10000000L) // openssl returns a const SSL_METHOD
 	const SSL_METHOD *method = NULL;
@@ -161,7 +176,6 @@ int SSLServer::CreateCTX(void)
 	SSL_METHOD *method = NULL;
 #endif
 	STACK_OF(X509_NAME) *cert_names;
-
 	// Compatible with SSLv2, SSLv3 and TLSv1
 	method = SSLv23_server_method();
 	//method = TLSv1_server_method();
@@ -178,7 +192,7 @@ int SSLServer::CreateCTX(void)
 		return(0);
 	if(!SSL_CTX_load_verify_locations(ctx,ca_certificate.c_str(),NULL))
 	if(verify_client)
-		SSL_CTX_set_verify(ctx,SSL_VERIFY_PEER,0);
+		SSL_CTX_set_verify(ctx,SSL_VERIFY_PEER|SSL_VERIFY_FAIL_IF_NO_PEER_CERT,0);
 	return(1);
 }
 /**********************************************************************************************/
