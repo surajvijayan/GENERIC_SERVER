@@ -105,7 +105,8 @@ Inheritance diagram for generic_plugin:</div>
  <div class="center">
   <img src="../../da/df5/classgeneric__plugin.png" usemap="#generic_plugin_map" alt=""/>
   <map id="generic_plugin_map" name="generic_plugin_map">
-<area href="../../d3/ded/classsample__plugin.html" title="Derived from GENERIC_PLUGIN. Implements virtual functions and all plug-in specific functionality..." alt="sample_plugin" shape="rect" coords="0,56,96,80"/>
+<area href="../../d5/daa/classsample2__plugin.html" title="Derived from GENERIC_PLUGIN. Implements virtual functions and all plug-in specific functionality..." alt="sample2_plugin" shape="rect" coords="0,56,99,80"/>
+<area href="../../d3/ded/classsample__plugin.html" title="Derived from GENERIC_PLUGIN. Implements virtual functions and all plug-in specific functionality..." alt="sample_plugin" shape="rect" coords="109,56,208,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -416,7 +417,7 @@ This method will be invoked once per line in plug-in conf file.
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 on success, 0 on failure. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d3/ded/classsample__plugin.html#a45525ac5128482386a90d1b75d2f5887">sample_plugin</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d5/daa/classsample2__plugin.html#ab7be5ac9b526fb707229f5e4a4fe9f13">sample2_plugin</a>, and <a class="el" href="../../d3/ded/classsample__plugin.html#a45525ac5128482386a90d1b75d2f5887">sample_plugin</a>.</p>
 
 <p>Definition at line <a class="el" href="../../d9/dd1/generic__plugin_8cpp_source.html#l00422">422</a> of file <a class="el" href="../../d9/dd1/generic__plugin_8cpp_source.html">generic_plugin.cpp</a>.</p>
 <div class="fragment"><div class="line">{</div>
@@ -504,7 +505,7 @@ This method will be invoked once per line in plug-in conf file.
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>1 on success, 0 on failure. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d3/ded/classsample__plugin.html#a30839d8944d38cd1e4042a5645492a5f">sample_plugin</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d5/daa/classsample2__plugin.html#a59088813edc36994bebc833a45b03622">sample2_plugin</a>, and <a class="el" href="../../d3/ded/classsample__plugin.html#a30839d8944d38cd1e4042a5645492a5f">sample_plugin</a>.</p>
 
 <p>Definition at line <a class="el" href="../../db/d97/generic__plugin_8h_source.html#l00163">163</a> of file <a class="el" href="../../db/d97/generic__plugin_8h_source.html">generic_plugin.h</a>.</p>
 <div class="fragment"><div class="line">{<span class="keywordflow">return</span>(0);};</div>
@@ -560,7 +561,7 @@ This method will be invoked once per line in plug-in conf file.
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>TERMINATE_SESSION to indicate plug-in done with the session with client or CONTINUE_SESSION to indicate plug-in want to continue session with client and process more requests. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d3/ded/classsample__plugin.html#a888b736e7b7d857024be6ecb7cd2a86a">sample_plugin</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d5/daa/classsample2__plugin.html#ae6d2f409f642a4af8309bba1a142ac28">sample2_plugin</a>, and <a class="el" href="../../d3/ded/classsample__plugin.html#a888b736e7b7d857024be6ecb7cd2a86a">sample_plugin</a>.</p>
 
 <p>Definition at line <a class="el" href="../../db/d97/generic__plugin_8h_source.html#l00183">183</a> of file <a class="el" href="../../db/d97/generic__plugin_8h_source.html">generic_plugin.h</a>.</p>
 <div class="fragment"><div class="line">{<span class="keywordflow">return</span>(0);};</div>
@@ -626,7 +627,7 @@ This method will be invoked once per line in plug-in conf file.
 <li>Store any information required to be shared across multiple instances of a plug-in into plug-in object as 'static' variable(s) </li>
 </ul>
 
-<p>Reimplemented in <a class="el" href="../../d3/ded/classsample__plugin.html#a63b8c5c6828b097c20c2c857bccacdb3">sample_plugin</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d5/daa/classsample2__plugin.html#a65a97124a551a414c0d2eb220ab8750a">sample2_plugin</a>, and <a class="el" href="../../d3/ded/classsample__plugin.html#a63b8c5c6828b097c20c2c857bccacdb3">sample_plugin</a>.</p>
 
 <p>Definition at line <a class="el" href="../../db/d97/generic__plugin_8h_source.html#l00197">197</a> of file <a class="el" href="../../db/d97/generic__plugin_8h_source.html">generic_plugin.h</a>.</p>
 
@@ -658,7 +659,7 @@ This method will be invoked once per line in plug-in conf file.
 </div><div class="memdoc">
 <p>This is the opposite of '<a class="el" href="../../da/df5/classgeneric__plugin.html#a21c61cab71fc8fb95a6e6ffd8ce743bc">server_init()</a>', framework invokes this method when a plug-in is removed from <a class="el" href="../../d1/db4/classgeneric__server.html" title="This is a singleton class and provides framework functionality.">generic_server</a> conf file. Similar to '<a class="el" href="../../da/df5/classgeneric__plugin.html#a21c61cab71fc8fb95a6e6ffd8ce743bc">server_init()</a>', '<a class="el" href="../../da/df5/classgeneric__plugin.html#ac654ed4ae25772cd5a241f268b66cd18">server_shutdown()</a>' gets invoked only once when the last plug-in of a plug-in_type is removed. </p>
 
-<p>Reimplemented in <a class="el" href="../../d3/ded/classsample__plugin.html#a86a27b71a5ddac8105601ad904abc66f">sample_plugin</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d5/daa/classsample2__plugin.html#a99e27edf3e5d651ddffc9b0e4dc8b6c4">sample2_plugin</a>, and <a class="el" href="../../d3/ded/classsample__plugin.html#a86a27b71a5ddac8105601ad904abc66f">sample_plugin</a>.</p>
 
 <p>Definition at line <a class="el" href="../../db/d97/generic__plugin_8h_source.html#l00203">203</a> of file <a class="el" href="../../db/d97/generic__plugin_8h_source.html">generic_plugin.h</a>.</p>
 <div class="fragment"><div class="line">{<span class="keywordflow">return</span>(1);};</div>
@@ -690,7 +691,7 @@ This method will be invoked once per line in plug-in conf file.
 <pre class="fragment">This method gets invoked whenever a client session gets terminated.
 </pre> <dl class="section return"><dt>Returns</dt><dd>1 on success, 0 on failure. This is the opposite of '<a class="el" href="../../da/df5/classgeneric__plugin.html#a4b3940cbfdc791e000ccc6edc324946a">plugin_init()</a>', framework invokes this method when a client session is getting terminated. </dd></dl>
 
-<p>Reimplemented in <a class="el" href="../../d3/ded/classsample__plugin.html#a0d5a9c66c6605ff2683ef5de985d2505">sample_plugin</a>.</p>
+<p>Reimplemented in <a class="el" href="../../d5/daa/classsample2__plugin.html#a9f94cdcb8050044a81f636ead301f69f">sample2_plugin</a>, and <a class="el" href="../../d3/ded/classsample__plugin.html#a0d5a9c66c6605ff2683ef5de985d2505">sample_plugin</a>.</p>
 
 <p>Definition at line <a class="el" href="../../db/d97/generic__plugin_8h_source.html#l00215">215</a> of file <a class="el" href="../../db/d97/generic__plugin_8h_source.html">generic_plugin.h</a>.</p>
 
@@ -799,7 +800,7 @@ This method will be invoked once per line in plug-in conf file.
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Nov 14 2013 12:07:37 for GENERIC_SERVER by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Nov 18 2013 12:48:33 for GENERIC_SERVER by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.1.2
 </small></address>
