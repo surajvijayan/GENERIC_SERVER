@@ -1,0 +1,3 @@
+LIBRARY "sample_plugin.dll"
+EXPORTS
+	create_instance
