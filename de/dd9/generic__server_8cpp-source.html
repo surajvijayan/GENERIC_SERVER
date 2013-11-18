@@ -482,7 +482,7 @@
 <a name="l00454"></a>00454     }
 <a name="l00455"></a>00455     <span class="keywordflow">if</span> (line.size() &gt; 14 &amp;&amp; line.compare(0,14,<span class="stringliteral">"VERIFY_CLIENT="</span>) == 0)
 <a name="l00456"></a>00456     {
-<a name="l00457"></a>00457                 <span class="keywordflow">if</span>(atoi(line.substr(12).c_str()))
+<a name="l00457"></a>00457                 <span class="keywordflow">if</span>(atoi(line.substr(14).c_str()))
 <a name="l00458"></a>00458                         <a class="code" href="../../d8/d97/classgeneric__server.html#42d0491807552c56a2961dfffa32b6b6">verify_client</a> = <span class="keyword">true</span>;
 <a name="l00459"></a>00459                 <span class="keywordflow">else</span>
 <a name="l00460"></a>00460                         <a class="code" href="../../d8/d97/classgeneric__server.html#42d0491807552c56a2961dfffa32b6b6">verify_client</a> = <span class="keyword">false</span>;
@@ -1433,12 +1433,12 @@
 <a name="l01405"></a>01405         }
 <a name="l01406"></a>01406         <span class="keywordflow">if</span>(ssl_response &lt; 0)
 <a name="l01407"></a>01407         {
-<a name="l01408"></a>01408                 <a class="code" href="../../d8/d97/classgeneric__server.html#b2642379662463b93d4c1cbb017b40df">log</a>(<a class="code" href="../../d7/d71/generic__server_8h.html#319b3d81d98069eab40e6da17932252a">LOG_LOW</a>,<a class="code" href="../../d7/d71/generic__server_8h.html#319b3d81d98069eab40e6da17932252a">LOG_LOW</a>,oss.str());
+<a name="l01408"></a>01408                 <span class="comment">//log(LOG_LOW,LOG_LOW,oss.str());</span>
 <a name="l01409"></a>01409                 <span class="keywordflow">return</span>(ssl_response);
 <a name="l01410"></a>01410         }
 <a name="l01411"></a>01411         <span class="keywordflow">if</span>(ssl_response == 0)
 <a name="l01412"></a>01412         {
-<a name="l01413"></a>01413                 <a class="code" href="../../d8/d97/classgeneric__server.html#b2642379662463b93d4c1cbb017b40df">log</a>(<a class="code" href="../../d7/d71/generic__server_8h.html#319b3d81d98069eab40e6da17932252a">LOG_LOW</a>,<a class="code" href="../../d7/d71/generic__server_8h.html#319b3d81d98069eab40e6da17932252a">LOG_LOW</a>,oss.str());
+<a name="l01413"></a>01413                 <span class="comment">//log(LOG_LOW,LOG_LOW,oss.str());</span>
 <a name="l01414"></a>01414                 <span class="keywordflow">return</span>(0);
 <a name="l01415"></a>01415         }
 <a name="l01416"></a>01416         <span class="keywordflow">return</span>(1);
@@ -1499,12 +1499,12 @@
 <a name="l01471"></a>01471         }
 <a name="l01472"></a>01472         <span class="keywordflow">if</span>(ssl_response &lt; 0)
 <a name="l01473"></a>01473         {
-<a name="l01474"></a>01474                 <a class="code" href="../../d8/d97/classgeneric__server.html#b2642379662463b93d4c1cbb017b40df">log</a>(<a class="code" href="../../d7/d71/generic__server_8h.html#319b3d81d98069eab40e6da17932252a">LOG_LOW</a>,<a class="code" href="../../d7/d71/generic__server_8h.html#319b3d81d98069eab40e6da17932252a">LOG_LOW</a>,oss.str());
+<a name="l01474"></a>01474                 <span class="comment">//log(LOG_LOW,LOG_LOW,oss.str());</span>
 <a name="l01475"></a>01475                 <span class="keywordflow">return</span>(ssl_response);
 <a name="l01476"></a>01476         }
 <a name="l01477"></a>01477         <span class="keywordflow">if</span>(ssl_response == 0)
 <a name="l01478"></a>01478         {
-<a name="l01479"></a>01479                 <a class="code" href="../../d8/d97/classgeneric__server.html#b2642379662463b93d4c1cbb017b40df">log</a>(<a class="code" href="../../d7/d71/generic__server_8h.html#319b3d81d98069eab40e6da17932252a">LOG_LOW</a>,<a class="code" href="../../d7/d71/generic__server_8h.html#319b3d81d98069eab40e6da17932252a">LOG_LOW</a>,oss.str());
+<a name="l01479"></a>01479                 <span class="comment">//log(LOG_LOW,LOG_LOW,oss.str());</span>
 <a name="l01480"></a>01480                 <span class="keywordflow">return</span>(0);
 <a name="l01481"></a>01481         }
 <a name="l01482"></a>01482         <span class="keywordflow">return</span>(status);
@@ -1567,7 +1567,7 @@
 <a name="l01539"></a>01539         <span class="keywordflow">return</span>(status);
 <a name="l01540"></a>01540 }
 <a name="l01541"></a>01541 <span class="comment">/*********************************************************************************************/</span>
-</pre></div><hr size="1"><address style="align: right;"><small>Generated on Tue Aug 6 17:08:24 2013 for GENERIC_SERVER by&nbsp;
+</pre></div><hr size="1"><address style="align: right;"><small>Generated on Mon Nov 18 12:03:31 2013 for GENERIC_SERVER by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="../../doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
 </body>

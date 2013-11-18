@@ -71,9 +71,9 @@
 <a name="l00043"></a>00043 <span class="preprocessor">#include &lt;map&gt;</span>
 <a name="l00044"></a>00044 <span class="preprocessor">#include &lt;utility&gt;</span>
 <a name="l00045"></a>00045 <span class="keyword">using namespace </span>std;
-<a name="l00046"></a>00046 <span class="preprocessor">#include "<a class="code" href="../../d5/db2/util_8h.html">util.h</a>"</span>
+<a name="l00046"></a>00046 <span class="preprocessor">#include "util.h"</span>
 <a name="l00047"></a>00047 
-<a name="l00048"></a><a class="code" href="../../d5/db2/util_8h.html#76aa70cbf61e0b9cf690a1a8a4865b51">00048</a> <span class="keywordtype">int</span> ssl_read_socket(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *buffer,<a class="code" href="../../db/de0/generic__plugin_8h.html#8b7037c483cc61d0d3d19c0b5280140c">SOCKET</a> &amp;sock,SSL **ssl_client)
+<a name="l00048"></a>00048 <span class="keywordtype">int</span> ssl_read_socket(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *buffer,<a class="code" href="../../db/de0/generic__plugin_8h.html#8b7037c483cc61d0d3d19c0b5280140c">SOCKET</a> &amp;sock,SSL **ssl_client)
 <a name="l00049"></a>00049 {
 <a name="l00050"></a>00050     <span class="keywordtype">char</span> buf[<a class="code" href="../../d7/d71/generic__server_8h.html#aaad26210242f40f69323a1adcc711ba">MAX_SZ</a>];
 <a name="l00051"></a>00051     fd_set socks;
@@ -92,7 +92,7 @@
 <a name="l00064"></a>00064         <span class="keywordflow">return</span>(0);
 <a name="l00065"></a>00065     <span class="keywordflow">else</span> <span class="keywordflow">if</span> (r &gt; 0 &amp;&amp; FD_ISSET(sock, &amp;socks))
 <a name="l00066"></a>00066     {
-<a name="l00067"></a>00067         r = ssl_read((SSL *)*ssl_client,buf,<a class="code" href="../../d5/db2/util_8h.html#71b6bc3288492d722c4630a32dc7a7c8">MSG_HDR_SIZE</a>);   <span class="comment">// First 4 bytes represent plugin SIGNATURE</span>
+<a name="l00067"></a>00067         r = ssl_read((SSL *)*ssl_client,buf,MSG_HDR_SIZE);   <span class="comment">// First 4 bytes represent plugin SIGNATURE</span>
 <a name="l00068"></a>00068                 <span class="keywordflow">if</span>(r &lt;= 0)
 <a name="l00069"></a>00069                 <span class="keywordflow">return</span>(0);
 <a name="l00070"></a>00070         memcpy(&amp;plugin_signature,buf,4);                                        <span class="comment">// Next 4 byes represent msg length</span>
@@ -113,7 +113,7 @@
 <a name="l00085"></a>00085 }
 <a name="l00086"></a>00086 <span class="comment">/**************************************************************************************/</span>
 <a name="l00087"></a>00087 
-<a name="l00088"></a><a class="code" href="../../d5/db2/util_8h.html#97fd8ff3124c3903463e40cce622386c">00088</a> <span class="keywordtype">int</span> ssl_read(SSL *ssl,<span class="keywordtype">char</span> *buf,<span class="keywordtype">int</span> size)
+<a name="l00088"></a>00088 <span class="keywordtype">int</span> ssl_read(SSL *ssl,<span class="keywordtype">char</span> *buf,<span class="keywordtype">int</span> size)
 <a name="l00089"></a>00089 {
 <a name="l00090"></a>00090         <span class="keywordtype">int</span> len,r;
 <a name="l00091"></a>00091 
@@ -141,7 +141,7 @@
 <a name="l00113"></a>00113 }
 <a name="l00114"></a>00114 <span class="comment">/**************************************************************************************/</span>
 <a name="l00115"></a>00115 
-<a name="l00116"></a><a class="code" href="../../d5/db2/util_8h.html#38de69ccada7653b758b5c5e72954125">00116</a> <span class="keywordtype">int</span> read_socket(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *buffer,<a class="code" href="../../db/de0/generic__plugin_8h.html#8b7037c483cc61d0d3d19c0b5280140c">SOCKET</a> conn_s)
+<a name="l00116"></a>00116 <span class="keywordtype">int</span> read_socket(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *buffer,<a class="code" href="../../db/de0/generic__plugin_8h.html#8b7037c483cc61d0d3d19c0b5280140c">SOCKET</a> conn_s)
 <a name="l00117"></a>00117 {
 <a name="l00118"></a>00118         <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> plugin_signature,msg_length;
 <a name="l00119"></a>00119     fd_set socks;
@@ -164,8 +164,8 @@
 <a name="l00136"></a>00136         <span class="keywordflow">return</span>(0);
 <a name="l00137"></a>00137     <span class="keywordflow">if</span>(FD_ISSET(conn_s,&amp;socks))
 <a name="l00138"></a>00138     {
-<a name="l00139"></a>00139         t = recv(conn_s,str,<a class="code" href="../../d5/db2/util_8h.html#71b6bc3288492d722c4630a32dc7a7c8">MSG_HDR_SIZE</a>, 0);    <span class="comment">// First 4 bytes represent plugin SIGNATURE</span>
-<a name="l00140"></a>00140                 <span class="keywordflow">if</span>(t &lt; <a class="code" href="../../d5/db2/util_8h.html#71b6bc3288492d722c4630a32dc7a7c8">MSG_HDR_SIZE</a>)
+<a name="l00139"></a>00139         t = recv(conn_s,str,MSG_HDR_SIZE, 0);    <span class="comment">// First 4 bytes represent plugin SIGNATURE</span>
+<a name="l00140"></a>00140                 <span class="keywordflow">if</span>(t &lt; MSG_HDR_SIZE)
 <a name="l00141"></a>00141                         <span class="keywordflow">return</span>(0);
 <a name="l00142"></a>00142         memcpy(&amp;plugin_signature,str,4);                 <span class="comment">// Next 4 byes represent msg length</span>
 <a name="l00143"></a>00143         memcpy(&amp;msg_length,str+4,4);
@@ -192,7 +192,7 @@
 <a name="l00164"></a>00164 <span class="comment">    Open socket to the given IP Address and Port</span>
 <a name="l00165"></a>00165 <span class="comment">    returns 0 for success</span>
 <a name="l00166"></a>00166 <span class="comment">*/</span>
-<a name="l00167"></a><a class="code" href="../../d5/db2/util_8h.html#ce0657fae182e6fe30d9d2b9027bc905">00167</a> <span class="keywordtype">int</span> ssl_connect(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ip_address, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port_number,<a class="code" href="../../db/de0/generic__plugin_8h.html#8b7037c483cc61d0d3d19c0b5280140c">SOCKET</a> &amp;sock,SSL **ssl_client,SSL_CTX **ctx)
+<a name="l00167"></a>00167 <span class="keywordtype">int</span> ssl_connect(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ip_address, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> port_number,<a class="code" href="../../db/de0/generic__plugin_8h.html#8b7037c483cc61d0d3d19c0b5280140c">SOCKET</a> &amp;sock,SSL **ssl_client,SSL_CTX **ctx)
 <a name="l00168"></a>00168 {
 <a name="l00169"></a>00169     <span class="keyword">struct </span>sockaddr_in sockaddr;
 <a name="l00170"></a>00170     memset(&amp;sockaddr, 0, <span class="keyword">sizeof</span>(sockaddr));
@@ -223,7 +223,7 @@
 <a name="l00195"></a>00195 }
 <a name="l00196"></a>00196 <span class="comment">/*****************************************************************************************************/</span>
 <a name="l00197"></a>00197 
-<a name="l00203"></a><a class="code" href="../../d5/db2/util_8h.html#7f6530b6d8775a109da9d2d5ad04f35e">00203</a> <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> id_function(<span class="keywordtype">void</span>)
+<a name="l00203"></a>00203 <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> id_function(<span class="keywordtype">void</span>)
 <a name="l00204"></a>00204 {
 <a name="l00205"></a>00205 <span class="preprocessor">#ifdef WINDOWS</span>
 <a name="l00206"></a>00206 <span class="preprocessor"></span>    <span class="keywordflow">return</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>) GetCurrentThreadId();
@@ -233,7 +233,7 @@
 <a name="l00210"></a>00210 <span class="preprocessor"></span>}
 <a name="l00211"></a>00211 <span class="comment">/**********************************************************************************************/</span>
 <a name="l00212"></a>00212 
-<a name="l00213"></a><a class="code" href="../../d5/db2/util_8h.html#34117759488dac708d5f6ef2784694fb">00213</a> <span class="keyword">struct </span><a class="code" href="../../dc/d30/structCRYPTO__dynlock__value.html">CRYPTO_dynlock_value</a> *dyn_create_function(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line)
+<a name="l00213"></a>00213 <span class="keyword">struct </span><a class="code" href="../../dc/d30/structCRYPTO__dynlock__value.html">CRYPTO_dynlock_value</a> *dyn_create_function(<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line)
 <a name="l00214"></a>00214 {
 <a name="l00215"></a>00215     <span class="keyword">struct </span><a class="code" href="../../dc/d30/structCRYPTO__dynlock__value.html">CRYPTO_dynlock_value</a> *value;
 <a name="l00216"></a>00216 
@@ -250,7 +250,7 @@
 <a name="l00227"></a>00227 }
 <a name="l00228"></a>00228 <span class="comment">/**********************************************************************************************/</span>
 <a name="l00229"></a>00229 
-<a name="l00230"></a><a class="code" href="../../d5/db2/util_8h.html#89ea7cb74ef22faba16b3155cca309dd">00230</a> <span class="keywordtype">void</span> dyn_lock_function(<span class="keywordtype">int</span> mode, <span class="keyword">struct</span> <a class="code" href="../../dc/d30/structCRYPTO__dynlock__value.html">CRYPTO_dynlock_value</a> *l,<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line)
+<a name="l00230"></a>00230 <span class="keywordtype">void</span> dyn_lock_function(<span class="keywordtype">int</span> mode, <span class="keyword">struct</span> CRYPTO_dynlock_value *l,<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line)
 <a name="l00231"></a>00231 {
 <a name="l00232"></a>00232     <span class="keywordflow">if</span> (mode &amp; CRYPTO_LOCK)
 <a name="l00233"></a>00233     {
@@ -272,7 +272,7 @@
 <a name="l00249"></a>00249 }
 <a name="l00250"></a>00250 <span class="comment">/**********************************************************************************************/</span>
 <a name="l00251"></a>00251 
-<a name="l00252"></a><a class="code" href="../../d5/db2/util_8h.html#0f59205cf85332afc6630dd2b0841c8b">00252</a> <span class="keywordtype">void</span> dyn_destroy_function(<span class="keyword">struct</span> <a class="code" href="../../dc/d30/structCRYPTO__dynlock__value.html">CRYPTO_dynlock_value</a> *l,<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line)
+<a name="l00252"></a>00252 <span class="keywordtype">void</span> dyn_destroy_function(<span class="keyword">struct</span> CRYPTO_dynlock_value *l,<span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line)
 <a name="l00253"></a>00253 {
 <a name="l00254"></a>00254 <span class="preprocessor">#ifdef WINDOWS</span>
 <a name="l00255"></a>00255 <span class="preprocessor"></span>    CloseHandle(l-&gt;<a class="code" href="../../dc/d30/structCRYPTO__dynlock__value.html#fa7b972d0ed2e8a3ae54dcd6ffa26596">mutex</a>);
@@ -286,7 +286,7 @@
 <a name="l00263"></a>00263 <span class="comment">    Open socket to the given IP Address and Port</span>
 <a name="l00264"></a>00264 <span class="comment">    returns 0 for success</span>
 <a name="l00265"></a>00265 <span class="comment">*/</span>
-<a name="l00266"></a><a class="code" href="../../d5/db2/util_8h.html#82ca511467cf6af3d03d420109360aaf">00266</a> <span class="keywordtype">int</span> sock_connect(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ip_address, <span class="keywordtype">unsigned</span>  <span class="keywordtype">int</span> port_number,<a class="code" href="../../db/de0/generic__plugin_8h.html#8b7037c483cc61d0d3d19c0b5280140c">SOCKET</a> &amp;sock)
+<a name="l00266"></a>00266 <span class="keywordtype">int</span> sock_connect(<span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> *ip_address, <span class="keywordtype">unsigned</span>  <span class="keywordtype">int</span> port_number,<a class="code" href="../../db/de0/generic__plugin_8h.html#8b7037c483cc61d0d3d19c0b5280140c">SOCKET</a> &amp;sock)
 <a name="l00267"></a>00267 {
 <a name="l00268"></a>00268     <span class="keyword">struct </span>sockaddr_in sockaddr;
 <a name="l00269"></a>00269 
@@ -309,29 +309,29 @@
 <a name="l00286"></a>00286 }
 <a name="l00287"></a>00287 <span class="comment">/**********************************************************************************************/</span>
 <a name="l00288"></a>00288 
-<a name="l00289"></a><a class="code" href="../../d5/db2/util_8h.html#034a092785640c8b2cdd1d1460d3522d">00289</a> <span class="keywordtype">void</span> locking_function(<span class="keywordtype">int</span> mode, <span class="keywordtype">int</span> n, <span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line)
+<a name="l00289"></a>00289 <span class="keywordtype">void</span> locking_function(<span class="keywordtype">int</span> mode, <span class="keywordtype">int</span> n, <span class="keyword">const</span> <span class="keywordtype">char</span> *file, <span class="keywordtype">int</span> line)
 <a name="l00290"></a>00290 {
 <a name="l00291"></a>00291     <span class="keywordflow">if</span> (mode &amp; CRYPTO_LOCK)
 <a name="l00292"></a>00292     {
 <a name="l00293"></a>00293 <span class="preprocessor">#ifdef WINDOWS</span>
 <a name="l00294"></a>00294 <span class="preprocessor"></span>        DWORD dwWaitResult;
-<a name="l00295"></a>00295         dwWaitResult = WaitForSingleObject(<a class="code" href="../../d5/db2/util_8h.html#bf6294f67486cc1edb47c7c70a234d7f">mutex_buf</a>[n],INFINITE);
+<a name="l00295"></a>00295         dwWaitResult = WaitForSingleObject(mutex_buf[n],INFINITE);
 <a name="l00296"></a>00296 <span class="preprocessor">#else</span>
-<a name="l00297"></a>00297 <span class="preprocessor"></span>        pthread_mutex_lock(&amp;<a class="code" href="../../d5/db2/util_8h.html#bf6294f67486cc1edb47c7c70a234d7f">mutex_buf</a>[n]);
+<a name="l00297"></a>00297 <span class="preprocessor"></span>        pthread_mutex_lock(&amp;mutex_buf[n]);
 <a name="l00298"></a>00298 <span class="preprocessor">#endif</span>
 <a name="l00299"></a>00299 <span class="preprocessor"></span>    }
 <a name="l00300"></a>00300     <span class="keywordflow">else</span>
 <a name="l00301"></a>00301     {
 <a name="l00302"></a>00302 <span class="preprocessor">#ifdef WINDOWS</span>
-<a name="l00303"></a>00303 <span class="preprocessor"></span>        ReleaseMutex(<a class="code" href="../../d5/db2/util_8h.html#bf6294f67486cc1edb47c7c70a234d7f">mutex_buf</a>[n]);
+<a name="l00303"></a>00303 <span class="preprocessor"></span>        ReleaseMutex(mutex_buf[n]);
 <a name="l00304"></a>00304 <span class="preprocessor">#else</span>
-<a name="l00305"></a>00305 <span class="preprocessor"></span>        pthread_mutex_unlock(&amp;<a class="code" href="../../d5/db2/util_8h.html#bf6294f67486cc1edb47c7c70a234d7f">mutex_buf</a>[n]);
+<a name="l00305"></a>00305 <span class="preprocessor"></span>        pthread_mutex_unlock(&amp;mutex_buf[n]);
 <a name="l00306"></a>00306 <span class="preprocessor">#endif</span>
 <a name="l00307"></a>00307 <span class="preprocessor"></span>    }
 <a name="l00308"></a>00308 }
 <a name="l00309"></a>00309 <span class="comment">/**********************************************************************************************/</span>
 <a name="l00310"></a>00310 
-<a name="l00311"></a><a class="code" href="../../d5/db2/util_8h.html#764c450d41bed4b29e435d16e07ded8d">00311</a> <span class="keywordtype">int</span> setnonblocking(<span class="keywordtype">int</span> sock)
+<a name="l00311"></a>00311 <span class="keywordtype">int</span> setnonblocking(<span class="keywordtype">int</span> sock)
 <a name="l00312"></a>00312 {
 <a name="l00313"></a>00313         <span class="keywordtype">int</span> iResult;
 <a name="l00314"></a>00314 <span class="preprocessor">#ifdef WINDOWS</span>
@@ -352,7 +352,7 @@
 <a name="l00329"></a>00329 <span class="preprocessor"></span>}
 <a name="l00330"></a>00330 <span class="comment">/*****************************************************************************************/</span>
 <a name="l00331"></a>00331 
-<a name="l00332"></a><a class="code" href="../../d5/db2/util_8h.html#212a797bf2e43226d21ea19bfb482124">00332</a> <span class="keywordtype">int</span> setblocking(<span class="keywordtype">int</span> sock)
+<a name="l00332"></a>00332 <span class="keywordtype">int</span> setblocking(<span class="keywordtype">int</span> sock)
 <a name="l00333"></a>00333 {
 <a name="l00334"></a>00334     <span class="keywordtype">int</span> iResult;
 <a name="l00335"></a>00335 <span class="preprocessor">#ifdef WINDOWS</span>
@@ -387,7 +387,7 @@
 <a name="l00364"></a>00364 <span class="preprocessor">#endif</span>
 <a name="l00365"></a>00365 <span class="preprocessor"></span><span class="comment">/*****************************************************************************************/</span>
 <a name="l00366"></a>00366 
-<a name="l00367"></a><a class="code" href="../../d5/db2/util_8h.html#5e3e8db09b0cdb46c665ac55566f4678">00367</a> <span class="keywordtype">int</span> create_message(string plugin_name,string message,<span class="keywordtype">char</span> *buff)
+<a name="l00367"></a>00367 <span class="keywordtype">int</span> create_message(string plugin_name,string message,<span class="keywordtype">char</span> *buff)
 <a name="l00368"></a>00368 {
 <a name="l00369"></a>00369 <span class="keywordtype">int</span> size,tot_size;
 <a name="l00370"></a>00370 <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> plugin_signature;
@@ -408,7 +408,7 @@
 <a name="l00385"></a>00385 }
 <a name="l00386"></a>00386 <span class="comment">/*****************************************************************************************/</span>
 <a name="l00387"></a>00387 
-<a name="l00388"></a><a class="code" href="../../d5/db2/util_8h.html#1fda935e257a849536957e46a9e340fe">00388</a> <span class="keywordtype">int</span> ssl_init(SSL_CTX **ctx)
+<a name="l00388"></a>00388 <span class="keywordtype">int</span> ssl_init(SSL_CTX **ctx)
 <a name="l00389"></a>00389 {
 <a name="l00390"></a>00390         <span class="keywordtype">int</span> i;
 <a name="l00391"></a>00391 <span class="preprocessor">#if (OPENSSL_VERSION_NUMBER &gt;= 0x10000000L) // openssl returns a const SSL_METHOD</span>
@@ -420,18 +420,18 @@
 <a name="l00397"></a>00397         SSL_library_init();
 <a name="l00398"></a>00398         OpenSSL_add_all_algorithms();
 <a name="l00399"></a>00399 <span class="preprocessor">#ifdef WINDOWS</span>
-<a name="l00400"></a>00400 <span class="preprocessor"></span>        <a class="code" href="../../d5/db2/util_8h.html#bf6294f67486cc1edb47c7c70a234d7f">mutex_buf</a> = (HANDLE *) malloc(CRYPTO_num_locks() * <span class="keyword">sizeof</span>(HANDLE));
+<a name="l00400"></a>00400 <span class="preprocessor"></span>        mutex_buf = (HANDLE *) malloc(CRYPTO_num_locks() * <span class="keyword">sizeof</span>(HANDLE));
 <a name="l00401"></a>00401 <span class="preprocessor">#else</span>
-<a name="l00402"></a>00402 <span class="preprocessor"></span>        <a class="code" href="../../d5/db2/util_8h.html#bf6294f67486cc1edb47c7c70a234d7f">mutex_buf</a> = (pthread_mutex_t *) malloc(CRYPTO_num_locks() * <span class="keyword">sizeof</span>(pthread_mutex_t));
+<a name="l00402"></a>00402 <span class="preprocessor"></span>        mutex_buf = (pthread_mutex_t *) malloc(CRYPTO_num_locks() * <span class="keyword">sizeof</span>(pthread_mutex_t));
 <a name="l00403"></a>00403 <span class="preprocessor">#endif</span>
-<a name="l00404"></a>00404 <span class="preprocessor"></span>        <span class="keywordflow">if</span> (<a class="code" href="../../d5/db2/util_8h.html#bf6294f67486cc1edb47c7c70a234d7f">mutex_buf</a> == NULL)
+<a name="l00404"></a>00404 <span class="preprocessor"></span>        <span class="keywordflow">if</span> (mutex_buf == NULL)
 <a name="l00405"></a>00405                 <span class="keywordflow">return</span> (0);
 <a name="l00406"></a>00406         <span class="keywordflow">for</span> (i = 0; i &lt; CRYPTO_num_locks(); i++)
 <a name="l00407"></a>00407         {
 <a name="l00408"></a>00408 #ifdef WINDOWS
-<a name="l00409"></a>00409                 <a class="code" href="../../d5/db2/util_8h.html#bf6294f67486cc1edb47c7c70a234d7f">mutex_buf</a>[i] = CreateMutex( NULL, FALSE, NULL );
+<a name="l00409"></a>00409                 mutex_buf[i] = CreateMutex( NULL, FALSE, NULL );
 <a name="l00410"></a>00410 <span class="preprocessor">#else</span>
-<a name="l00411"></a>00411 <span class="preprocessor"></span>                pthread_mutex_init(&amp;<a class="code" href="../../d5/db2/util_8h.html#bf6294f67486cc1edb47c7c70a234d7f">mutex_buf</a>[i], NULL);
+<a name="l00411"></a>00411 <span class="preprocessor"></span>                pthread_mutex_init(&amp;mutex_buf[i], NULL);
 <a name="l00412"></a>00412 <span class="preprocessor">#endif</span>
 <a name="l00413"></a>00413 <span class="preprocessor"></span>        }
 <a name="l00414"></a>00414         <span class="comment">/* static locks callbacks */</span>            
@@ -457,7 +457,7 @@
 <a name="l00434"></a>00434         <span class="keywordflow">return</span>(1);
 <a name="l00435"></a>00435 }
 <a name="l00436"></a>00436 <span class="comment">/*****************************************************************************************/</span>
-</pre></div><hr size="1"><address style="align: right;"><small>Generated on Tue Aug 6 17:08:24 2013 for GENERIC_SERVER by&nbsp;
+</pre></div><hr size="1"><address style="align: right;"><small>Generated on Mon Nov 18 12:03:31 2013 for GENERIC_SERVER by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="../../doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.4.7 </small></address>
 </body>
