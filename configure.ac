@@ -18,7 +18,7 @@ AC_PROG_LN_S
 AC_PROG_MAKE_SET
 AC_PROG_RANLIB
 AC_PROG_LIBTOOL
-AM_INIT_AUTOMAKE
+AM_INIT_AUTOMAKE([subdir-objects])
 AC_PROG_CXX
 # Checks for libraries.
 AC_CHECK_LIB([ssl], [SSL_library_init])
