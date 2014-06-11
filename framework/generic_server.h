@@ -201,7 +201,7 @@ private:
     /// Initializes TLS.
     int tls_setup(void);
     /// This is invoked when any plug-in entry gets removed from Master configuration file and framework gets signaled.
-    int remove_devices(map <string,int> &new_ports);
+    int remove_plugins(map <string,int> &new_ports);
     int  remove_all_aliases();
 /**
 *    Update plug-in object with plug-in specific configuration parameters from plug-in conf file.

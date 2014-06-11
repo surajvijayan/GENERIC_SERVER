@@ -326,7 +326,7 @@ bool generic_server::check_plugin_aliases(vector<string> &plugin_parms)
 }
 /*********************************************************************************************/
 
-int generic_server::remove_devices(map <string,int> &new_ports)
+int generic_server::remove_plugins(map <string,int> &new_ports)
 {
 	vector <GENERIC_PLUGIN *>::iterator it;
 	map <string,int>::iterator ports_itr;
@@ -336,14 +336,14 @@ int generic_server::remove_devices(map <string,int> &new_ports)
 	for(pos=0,it = get_start_iterator(); it != get_end_iterator();it++,pos++)
 	{
 		ports_itr = new_ports.find((*it)->get_plugin_name());
-		if(new_ports.empty() || ports_itr == new_ports.end()) // a device / port got removed from conf_file
+		if(new_ports.empty() || ports_itr == new_ports.end()) // a plugin / port got removed from conf_file
 		{
-			if((*it)->aliases_count())				 // Removed device in CONF has some alias devices
-			{										 // We'll now make first alias device as the 'new'
-				new_pluginid = (*it)->pop_alias();   // primary device
+			if((*it)->aliases_count())				 // Removed plugin in CONF has some alias plugins
+			{										 // We'll now make first alias plugin as the 'new'
+				new_pluginid = (*it)->pop_alias();   // primary plugin
 				(*it)->set_plugin_name(new_pluginid);
 			}
-			else									 // Removed device in CONF does not have any alias devices
+			else									 // Removed plugin in CONF does not have any alias plugins
 			{										 // remove it from global vector
 				shutdown((*it)->get_socket(),2);
 #ifdef WINDOWS
@@ -1111,7 +1111,7 @@ int  generic_server::reload_conf_file(void)
 		v.push_back(plugin);
     }
 	inf.close();
-	remove_devices(new_conf_ports);
+	remove_plugins(new_conf_ports);
 	print_key_message();
 return(1);
 }

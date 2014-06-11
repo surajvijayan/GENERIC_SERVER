@@ -346,7 +346,7 @@ SOCKET generic_plugin::initialize_socket(string port)
         os << fwork->get_cur_time() << " Thr.ID:MAIN getaddrinfo failed.";
         fwork->log(LOG_LOW,verbose_level,os.str());
 	}
-    // Create a SOCKET for one device/plugin
+    // Create a SOCKET for one plugin
     ListenSocket = socket(result->ai_family, result->ai_socktype, result->ai_protocol);
     if (ListenSocket == INVALID_SOCKET)
     {

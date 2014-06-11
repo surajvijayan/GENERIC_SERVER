@@ -259,7 +259,7 @@ ostringstream os;
 			{
 				if(!plugin_p->find_plugin_alias(plugin_name))
 					throw 1;
-				// Moving primary device name to alias list for this session..
+				// Moving primary plugin name to alias list for this session..
 				plugin_p->add_plugin_alias(plugin_p->get_plugin_name());
 				// setting alias name as primary Plugin for this thread..
 				plugin_p->set_plugin_name(plugin_name);			
@@ -372,7 +372,7 @@ ostringstream  os;
 			{
 				if(!plugin_p->find_plugin_alias(plugin_name))
 					throw 1;
-				// Moving primary device name to alias list for this session..
+				// Moving primary plugin name to alias list for this session..
 				plugin_p->add_plugin_alias(plugin_p->get_plugin_name());
 				// setting alias name as primary Plugin for this thread..
 				plugin_p->set_plugin_name(plugin_name);			

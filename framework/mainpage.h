@@ -221,14 +221,14 @@
 *	#LOG_FILE=SYSLOG
 *	# This is the seconds interval a thread will do idle wait client
 *	TIMEOUT_SECONDS=300
-*	# Max. concurrent threads the will framework will spawn for all devices
+*	# Max. concurrent threads the will framework will spawn for all plugins
 *	MAX_THREADS=100
 *	# next 2 entries are self-explanatory
 *	MAX_LOG_SIZE_IN_MB=100
 *	MAX_LOGS_SAVED=5
-*	# TLS certificate in PEM format, if TLS is enabled for any device
+*	# TLS certificate in PEM format, if TLS is enabled for any plugin
 *	SERVER_CERTIFICATE=/tmp/TEST/CERT/generic_server.crt
-*	# TLS private_key in PEM format, if TLS is enabled for any device
+*	# TLS private_key in PEM format, if TLS is enabled for any plugin
 *	RSA_PRIVATE_KEY=/tmp/TEST/CERT/generic_server.key
 *	# CA cert file
 *	CA_CERTIFICATE=/tmp/TEST//CERT/CAfile.pem
